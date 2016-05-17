@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'QPXExpressWrapper_Example' do
+  pod 'QPXExpressWrapper', :path => '../'
+
+  target 'QPXExpressWrapper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
