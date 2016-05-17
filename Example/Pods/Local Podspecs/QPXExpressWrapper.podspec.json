@@ -1,0 +1,19 @@
+{
+  "name": "QPXExpressWrapper",
+  "version": "0.1.0",
+  "summary": "A short description of QPXExpressWrapper.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/QPXExpressWrapper",
+  "license": "MIT",
+  "authors": {
+    "Kyle Yoon": "apps.yoon@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/QPXExpressWrapper.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "QPXExpressWrapper/Classes/**/*"
+}

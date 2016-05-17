@@ -1,0 +1,16 @@
+PODS:
+  - QPXExpressWrapper (0.1.0)
+
+DEPENDENCIES:
+  - QPXExpressWrapper (from `../`)
+
+EXTERNAL SOURCES:
+  QPXExpressWrapper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  QPXExpressWrapper: 38c460caa799eafb62a4271f78d3bd77d9ae1a0f
+
+PODFILE CHECKSUM: d6d098636f8fca63a2747cea646566f37b58f230
+
+COCOAPODS: 1.0.0

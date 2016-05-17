@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "QPXExpressWrapper"
   s.version          = "0.1.0"
-  s.summary          = "A short description of QPXExpressWrapper."
+  s.summary          = "A wrapper for the Google QPX Express API."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+This CocoaPod provides the model layer and query utilities to use the QPX Express API with ease.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/QPXExpressWrapper"
+  s.homepage         = "https://github.com/yoonapps/QPXExpressWrapper"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Kyle Yoon" => "apps.yoon@gmail.com" }
@@ -31,7 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'QPXExpressWrapper/Classes/**/*'
-  
+
   # s.resource_bundles = {
   #   'QPXExpressWrapper' => ['QPXExpressWrapper/Assets/*.png']
   # }

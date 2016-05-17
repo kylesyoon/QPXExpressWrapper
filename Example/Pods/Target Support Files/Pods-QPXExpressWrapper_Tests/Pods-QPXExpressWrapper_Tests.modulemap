@@ -1,0 +1,6 @@
+framework module Pods_QPXExpressWrapper_Tests {
+  umbrella header "Pods-QPXExpressWrapper_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
