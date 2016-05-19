@@ -1,6 +1,6 @@
 # QPXExpressWrapper
 
-A wrapper for the Google QPX Express API.
+A wrapper for the Google QPX Express API. This CocoaPod aims to remove the hassle of creating a model layer for the API.
 
 [![CI Status](http://img.shields.io/travis/Kyle Yoon/QPXExpressWrapper.svg?style=flat)](https://travis-ci.org/Kyle Yoon/QPXExpressWrapper)
 [![Version](https://img.shields.io/cocoapods/v/QPXExpressWrapper.svg?style=flat)](http://cocoapods.org/pods/QPXExpressWrapper)
