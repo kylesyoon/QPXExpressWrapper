@@ -1,9 +1,9 @@
 {
   "name": "QPXExpressWrapper",
   "version": "0.1.0",
-  "summary": "A short description of QPXExpressWrapper.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/QPXExpressWrapper",
+  "summary": "A wrapper for the Google QPX Express API.",
+  "description": "This CocoaPod provides the model layer and query utilities to use the QPX Express API with ease.",
+  "homepage": "https://github.com/yoonapps/QPXExpressWrapper",
   "license": "MIT",
   "authors": {
     "Kyle Yoon": "apps.yoon@gmail.com"
