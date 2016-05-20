@@ -7,35 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F4E8CAF3DE22AFB1C67C16651C94318 /* TripOptionPricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF7B8F64359FA217B17C3686F72842 /* TripOptionPricing.swift */; };
-		1B17E82E72BC30D04B52D012E56E07FD /* TripsDataCarrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19298D0F2FEDFE5EA47807DDACA832 /* TripsDataCarrier.swift */; };
-		33B7BEEB1C8B6E54688FA3138EDADE0D /* TripOptionSliceSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE082FD0B5BD24FA62187933CC6C3D0 /* TripOptionSliceSegment.swift */; };
+		0A9B1A9A50FE7F0741239CDCC0FE1198 /* TripOptionSliceSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFDCB7D19098DBE053E22F0476FB57 /* TripOptionSliceSegment.swift */; };
+		0E874B3BDDE90157F9D237445BE395A6 /* TripRequestPassengers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35600F142B3CDF883028DAA6C264C0DA /* TripRequestPassengers.swift */; };
+		106359B7140E68CD96CD1FB4E3E9CD53 /* TripsDataTax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11727C3BFBDD0F4E11B2162F47D98435 /* TripsDataTax.swift */; };
+		11707596C1EB08A3327F733722D5C1CD /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9204011153815E28ED37DA40761E54 /* SearchResults.swift */; };
 		351E4C2805705ED25EB2992003769251 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		3C12092BAECDF5D24BA8DD0886F0065B /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6E329493237B7D50030E874E1439A /* Trips.swift */; };
 		3F49ED0513958D678962DACC226E84C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		5B991A6C3540D1404EBB2363760F1D92 /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9791DFD77BF7AD74DDF58BB1FC8BF4E /* SearchResults.swift */; };
+		487CF3FE6E9D4CB436E00E081E00F991 /* TripsDataCarrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B253C4F8AF2315BC54C068CAB389EA /* TripsDataCarrier.swift */; };
+		517C833FCFC49340476377788A6231E9 /* TripRequestSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0897486C2744DF19E26E321C42D2F0A /* TripRequestSlice.swift */; };
+		51F8741ECDD2E9EF7671A4B9C4707CBF /* TripOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B145CD36FF97BBDD46CC16423E1AC /* TripOption.swift */; };
 		5CB940268C448618C44CAAC5ED5CB39B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		6046F65186AC1DB8CF852A703D5FDBE5 /* TripOptionSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AECA8F834FEA9AAEF34811E7C817CB /* TripOptionSlice.swift */; };
-		6BD02AA751B455F43E47F6B91BF0CB99 /* TripRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69413102A2986C41A308B9A3CED848B0 /* TripRequest.swift */; };
-		7433047EA8FFB177D186D723D5FE47C3 /* TripsDataCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F11E5C58FD76B85075FBBAF14606503 /* TripsDataCity.swift */; };
-		7A062220DD70E94A7C045F58B6548EF6 /* TripOptionPricingSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9806147A528520DBDAD4E3688DF903C /* TripOptionPricingSegment.swift */; };
+		63181D85C7721FBCCC2BC69995C4D170 /* TripsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A7AEFAA2AE84501357A9C5E2E6AC81 /* TripsData.swift */; };
+		66B0BC99547816E3A3604BB9C718904D /* TripOptionSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE9DE6449C9C90AB1774A1BB0B221B /* TripOptionSlice.swift */; };
+		79A42018B17B3500C33BA39422C9326A /* TripOptionPricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536B8093E47E9E73B0F8E80A42891DB /* TripOptionPricing.swift */; };
+		7DD579DCD30FE8E422BEA735C7FFFF05 /* TripOptionSliceSegmentLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0C8AADD218B5070CADDCEE71C16475 /* TripOptionSliceSegmentLeg.swift */; };
 		82F86FB2115673E1A44C341FF8F666C5 /* Pods-QPXExpressWrapper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F84798E5CBB07EB32F473DDE527D7 /* Pods-QPXExpressWrapper_Tests-dummy.m */; };
-		83DA9AE4AB1366A20A9F4D6D7ED4BB6D /* TripsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F755242655CA08482A6591EB069C89 /* TripsData.swift */; };
-		8925EEF8156FD78D914D30748A442F65 /* TripsDataTax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A37777B32766A025C1146ED4C8DD64 /* TripsDataTax.swift */; };
-		90875BC775E12D91FAD0B48C28FE8FDD /* TripOptionSliceSegmentLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369B4767781A1CDE76DF056773D10461 /* TripOptionSliceSegmentLeg.swift */; };
+		90CAB3B15285D03EDE5619016C6DAED4 /* TripRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE56FCB73D5CC610759B79A4D9DC2247 /* TripRequest.swift */; };
+		9F4A099D1B60649DC4E0123848C8CEEC /* TripOptionSliceSegmentFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C2449C2241EE52B88084FEE95A57E /* TripOptionSliceSegmentFlight.swift */; };
+		A0635E358766BE088B3BA242745D8E08 /* TripsDataAircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1FF964180C001D3C55D74761A9348 /* TripsDataAircraft.swift */; };
 		A3F81C9E2E416D5285E2EEB9F1B2B43A /* Pods-QPXExpressWrapper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C1EB7E857F4729C7F1AE2A4C645621 /* Pods-QPXExpressWrapper_Example-dummy.m */; };
-		A6D0E98330948C2BCC4296108C4369D9 /* TripRequestPassengers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9443FB80F06A0D517B2629E1FDF7179 /* TripRequestPassengers.swift */; };
-		B896ED7182211D2469C78B2913DC30E2 /* TripOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D710D604D1D2742D06CA7DDFE78707 /* TripOption.swift */; };
+		B28ADE4A6C2CEA568038DB7C9AA99672 /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CA33F74B4F07B838EA6A0293646CC4 /* Trips.swift */; };
+		B5ECACE64A94D9FCC82EFB6D818B8599 /* TripsDataCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F05162CAE1EA57497F6DCD26102F4 /* TripsDataCity.swift */; };
+		C08566A208216EE184FD208F1DAFB7D7 /* TripOptionPricingFare.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC74D3348BA7D84B81607CE4A1C05C /* TripOptionPricingFare.swift */; };
+		C75ADCDC2A7FDF638B46A22BD2AAC163 /* TripOptionPricingTax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3176E6195CA6FA79E0EF042EAFC36E49 /* TripOptionPricingTax.swift */; };
 		C84AFE979BB8514A51A7F985B8DFBFAE /* QPXExpressWrapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 718A7AF64A475208F1CAED7C406B207E /* QPXExpressWrapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA15AD1EBF842FB936A7500AC6AE1FDF /* TripsDataAirport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E25E7D4F29E5E98F3AC12FA98790B50 /* TripsDataAirport.swift */; };
-		D6071A2854F81B895F37231C8A9E4C5E /* QPXExpressWrapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A09ED20A48DF0F72AC9D7B209E6B4 /* QPXExpressWrapper-dummy.m */; };
-		F39FECCC2AA352250D7B892230652A8D /* TripOptionPricingFare.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC3B9D101AC64B08D52E8B4226B61E0 /* TripOptionPricingFare.swift */; };
-		F723FB3E52907FDD56321315904BB1D0 /* TripsDataAircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C388885A85E3AEB78D01EF21E4A07DB /* TripsDataAircraft.swift */; };
+		E69F173717E243D9009609A8CCA335E1 /* TripOptionPricingSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3051BF6FA8E854426193FED55E4E697 /* TripOptionPricingSegment.swift */; };
+		F0B883FD7170914F1969BDA7438531C4 /* QPXExpressWrapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A09ED20A48DF0F72AC9D7B209E6B4 /* QPXExpressWrapper-dummy.m */; };
+		F4835104740817980332B0643408D481 /* TripsDataAirport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E116CDB94029719367F9E1BFC78368 /* TripsDataAirport.swift */; };
 		F817656D55AFDCC44D8D601C30165EBE /* Pods-QPXExpressWrapper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B5711E318019C6ED9F6FF705B5DCEB0 /* Pods-QPXExpressWrapper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8B1E85635C87CC5C96D785DC7348ED0 /* Pods-QPXExpressWrapper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA5FDF9E409D23075B48B67A566B12B1 /* Pods-QPXExpressWrapper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FC48A121CC59DD65F2D0C986EFC03112 /* TripOptionSliceSegmentFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82530D1646E04A1A7A6F5175CE8DCEB3 /* TripOptionSliceSegmentFlight.swift */; };
-		FCDA3D251E8B239D1FEFAD1F5C418F84 /* TripOptionPricingTax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555004D34DEF17A001E38D5E070A471A /* TripOptionPricingTax.swift */; };
-		FFC62F0CD0DECD11050C428056AD3171 /* TripRequestSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B99887CDD0D01525E9D4A011244F97 /* TripRequestSlice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,56 +50,56 @@
 
 /* Begin PBXFileReference section */
 		052DA27656F423DBCFA14F984B9B740D /* QPXExpressWrapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = QPXExpressWrapper.modulemap; sourceTree = "<group>"; };
+		053F05162CAE1EA57497F6DCD26102F4 /* TripsDataCity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsDataCity.swift; sourceTree = "<group>"; };
 		069140AC858A3BD4AF9093E18C157CE1 /* Pods-QPXExpressWrapper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QPXExpressWrapper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		08CA3B70366035459BCD63E485191E57 /* Pods-QPXExpressWrapper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QPXExpressWrapper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		09B253C4F8AF2315BC54C068CAB389EA /* TripsDataCarrier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsDataCarrier.swift; sourceTree = "<group>"; };
+		09BE9DE6449C9C90AB1774A1BB0B221B /* TripOptionSlice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionSlice.swift; sourceTree = "<group>"; };
 		0A06A79B80DB8624323B92264C7E2B85 /* Pods-QPXExpressWrapper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QPXExpressWrapper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0F11E5C58FD76B85075FBBAF14606503 /* TripsDataCity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsDataCity.swift; sourceTree = "<group>"; };
-		0FE082FD0B5BD24FA62187933CC6C3D0 /* TripOptionSliceSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionSliceSegment.swift; sourceTree = "<group>"; };
-		14A37777B32766A025C1146ED4C8DD64 /* TripsDataTax.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsDataTax.swift; sourceTree = "<group>"; };
+		11727C3BFBDD0F4E11B2162F47D98435 /* TripsDataTax.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsDataTax.swift; sourceTree = "<group>"; };
 		19DFA9018A699E04ABD944CAFF207914 /* Pods-QPXExpressWrapper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QPXExpressWrapper_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1E25E7D4F29E5E98F3AC12FA98790B50 /* TripsDataAirport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsDataAirport.swift; sourceTree = "<group>"; };
-		2C388885A85E3AEB78D01EF21E4A07DB /* TripsDataAircraft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsDataAircraft.swift; sourceTree = "<group>"; };
 		312D11F3D744753AD9AE1655411C7DDD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3176E6195CA6FA79E0EF042EAFC36E49 /* TripOptionPricingTax.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionPricingTax.swift; sourceTree = "<group>"; };
 		31C0E660B21F02986EC075364DB34E9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3326C6542656DE8DB0A15EF3A99046A2 /* Pods_QPXExpressWrapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QPXExpressWrapper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		369B4767781A1CDE76DF056773D10461 /* TripOptionSliceSegmentLeg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionSliceSegmentLeg.swift; sourceTree = "<group>"; };
+		35600F142B3CDF883028DAA6C264C0DA /* TripRequestPassengers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripRequestPassengers.swift; sourceTree = "<group>"; };
 		4312F4CEA2B6C56B8E0AB959F5B8D5AB /* QPXExpressWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QPXExpressWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A0FF6EF8D133DD2847D637623BCE48 /* Pods-QPXExpressWrapper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QPXExpressWrapper_Example-frameworks.sh"; sourceTree = "<group>"; };
-		555004D34DEF17A001E38D5E070A471A /* TripOptionPricingTax.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionPricingTax.swift; sourceTree = "<group>"; };
-		69413102A2986C41A308B9A3CED848B0 /* TripRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripRequest.swift; sourceTree = "<group>"; };
-		69F755242655CA08482A6591EB069C89 /* TripsData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsData.swift; sourceTree = "<group>"; };
 		6B5711E318019C6ED9F6FF705B5DCEB0 /* Pods-QPXExpressWrapper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QPXExpressWrapper_Example-umbrella.h"; sourceTree = "<group>"; };
-		6D19298D0F2FEDFE5EA47807DDACA832 /* TripsDataCarrier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsDataCarrier.swift; sourceTree = "<group>"; };
 		718A7AF64A475208F1CAED7C406B207E /* QPXExpressWrapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QPXExpressWrapper-umbrella.h"; sourceTree = "<group>"; };
 		740F84798E5CBB07EB32F473DDE527D7 /* Pods-QPXExpressWrapper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QPXExpressWrapper_Tests-dummy.m"; sourceTree = "<group>"; };
+		77CA33F74B4F07B838EA6A0293646CC4 /* Trips.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
+		7A5C2449C2241EE52B88084FEE95A57E /* TripOptionSliceSegmentFlight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionSliceSegmentFlight.swift; sourceTree = "<group>"; };
 		7CBAD5F2828885B96853628A3F15D165 /* QPXExpressWrapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QPXExpressWrapper-prefix.pch"; sourceTree = "<group>"; };
 		7FB4135269DC99FDEB224C843CE7DF55 /* Pods_QPXExpressWrapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QPXExpressWrapper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8244AD3DC959C12E2CCF94457FB4F52C /* Pods-QPXExpressWrapper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QPXExpressWrapper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		82530D1646E04A1A7A6F5175CE8DCEB3 /* TripOptionSliceSegmentFlight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionSliceSegmentFlight.swift; sourceTree = "<group>"; };
-		83B99887CDD0D01525E9D4A011244F97 /* TripRequestSlice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripRequestSlice.swift; sourceTree = "<group>"; };
-		86AECA8F834FEA9AAEF34811E7C817CB /* TripOptionSlice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionSlice.swift; sourceTree = "<group>"; };
-		89AF7B8F64359FA217B17C3686F72842 /* TripOptionPricing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionPricing.swift; sourceTree = "<group>"; };
+		88DFDCB7D19098DBE053E22F0476FB57 /* TripOptionSliceSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionSliceSegment.swift; sourceTree = "<group>"; };
 		8A30C8E95FBA08DB7790641211D10B5B /* Pods-QPXExpressWrapper_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QPXExpressWrapper_Example-resources.sh"; sourceTree = "<group>"; };
+		8E0C8AADD218B5070CADDCEE71C16475 /* TripOptionSliceSegmentLeg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionSliceSegmentLeg.swift; sourceTree = "<group>"; };
 		901789C08B7FA0ED807F315E16D9EF76 /* Pods-QPXExpressWrapper_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QPXExpressWrapper_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94F42DD843F1499F593CB37A64BCBBAC /* Pods-QPXExpressWrapper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QPXExpressWrapper_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A8A7AEFAA2AE84501357A9C5E2E6AC81 /* TripsData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsData.swift; sourceTree = "<group>"; };
 		B1C1EB7E857F4729C7F1AE2A4C645621 /* Pods-QPXExpressWrapper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QPXExpressWrapper_Example-dummy.m"; sourceTree = "<group>"; };
+		B536B8093E47E9E73B0F8E80A42891DB /* TripOptionPricing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionPricing.swift; sourceTree = "<group>"; };
 		B6C7AD8E96E51CB1BC664CE3E3B57F8F /* QPXExpressWrapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QPXExpressWrapper.xcconfig; sourceTree = "<group>"; };
-		B9443FB80F06A0D517B2629E1FDF7179 /* TripRequestPassengers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripRequestPassengers.swift; sourceTree = "<group>"; };
+		B7E116CDB94029719367F9E1BFC78368 /* TripsDataAirport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsDataAirport.swift; sourceTree = "<group>"; };
 		B98A09ED20A48DF0F72AC9D7B209E6B4 /* QPXExpressWrapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QPXExpressWrapper-dummy.m"; sourceTree = "<group>"; };
-		C3F6E329493237B7D50030E874E1439A /* Trips.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
+		BB9204011153815E28ED37DA40761E54 /* SearchResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		C4B893E0B612E6B3103464E368E848CE /* Pods-QPXExpressWrapper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QPXExpressWrapper_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C6D710D604D1D2742D06CA7DDFE78707 /* TripOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOption.swift; sourceTree = "<group>"; };
 		C6F0BCBC8C25CF35A42B058F03DF9050 /* Pods-QPXExpressWrapper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QPXExpressWrapper_Example.modulemap"; sourceTree = "<group>"; };
-		C9791DFD77BF7AD74DDF58BB1FC8BF4E /* SearchResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		CE56FCB73D5CC610759B79A4D9DC2247 /* TripRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripRequest.swift; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CF772A59C940DFD8744E19E9B8C8E8C7 /* Pods-QPXExpressWrapper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QPXExpressWrapper_Tests.modulemap"; sourceTree = "<group>"; };
+		D9D1FF964180C001D3C55D74761A9348 /* TripsDataAircraft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsDataAircraft.swift; sourceTree = "<group>"; };
 		DACC9B4A959C4C901CCD91F202AA6F80 /* Pods-QPXExpressWrapper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QPXExpressWrapper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DB4B145CD36FF97BBDD46CC16423E1AC /* TripOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOption.swift; sourceTree = "<group>"; };
 		E918E0E5A411433AC5EAC38A4FF16A81 /* Pods-QPXExpressWrapper_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QPXExpressWrapper_Tests-resources.sh"; sourceTree = "<group>"; };
-		E9806147A528520DBDAD4E3688DF903C /* TripOptionPricingSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionPricingSegment.swift; sourceTree = "<group>"; };
+		F0897486C2744DF19E26E321C42D2F0A /* TripRequestSlice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripRequestSlice.swift; sourceTree = "<group>"; };
+		F3051BF6FA8E854426193FED55E4E697 /* TripOptionPricingSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionPricingSegment.swift; sourceTree = "<group>"; };
+		F4BC74D3348BA7D84B81607CE4A1C05C /* TripOptionPricingFare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionPricingFare.swift; sourceTree = "<group>"; };
 		F4E7ECC8B53622AF26136962B4538769 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA5FDF9E409D23075B48B67A566B12B1 /* Pods-QPXExpressWrapper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QPXExpressWrapper_Tests-umbrella.h"; sourceTree = "<group>"; };
-		FDC3B9D101AC64B08D52E8B4226B61E0 /* TripOptionPricingFare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionPricingFare.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,33 +130,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24FA5C3ABBF2C31B85E8623B69679A9C /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C9791DFD77BF7AD74DDF58BB1FC8BF4E /* SearchResults.swift */,
-				C6D710D604D1D2742D06CA7DDFE78707 /* TripOption.swift */,
-				89AF7B8F64359FA217B17C3686F72842 /* TripOptionPricing.swift */,
-				FDC3B9D101AC64B08D52E8B4226B61E0 /* TripOptionPricingFare.swift */,
-				E9806147A528520DBDAD4E3688DF903C /* TripOptionPricingSegment.swift */,
-				555004D34DEF17A001E38D5E070A471A /* TripOptionPricingTax.swift */,
-				86AECA8F834FEA9AAEF34811E7C817CB /* TripOptionSlice.swift */,
-				0FE082FD0B5BD24FA62187933CC6C3D0 /* TripOptionSliceSegment.swift */,
-				82530D1646E04A1A7A6F5175CE8DCEB3 /* TripOptionSliceSegmentFlight.swift */,
-				369B4767781A1CDE76DF056773D10461 /* TripOptionSliceSegmentLeg.swift */,
-				69413102A2986C41A308B9A3CED848B0 /* TripRequest.swift */,
-				B9443FB80F06A0D517B2629E1FDF7179 /* TripRequestPassengers.swift */,
-				83B99887CDD0D01525E9D4A011244F97 /* TripRequestSlice.swift */,
-				C3F6E329493237B7D50030E874E1439A /* Trips.swift */,
-				69F755242655CA08482A6591EB069C89 /* TripsData.swift */,
-				2C388885A85E3AEB78D01EF21E4A07DB /* TripsDataAircraft.swift */,
-				1E25E7D4F29E5E98F3AC12FA98790B50 /* TripsDataAirport.swift */,
-				6D19298D0F2FEDFE5EA47807DDACA832 /* TripsDataCarrier.swift */,
-				0F11E5C58FD76B85075FBBAF14606503 /* TripsDataCity.swift */,
-				14A37777B32766A025C1146ED4C8DD64 /* TripsDataTax.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,10 +194,10 @@
 			path = "Target Support Files/Pods-QPXExpressWrapper_Tests";
 			sourceTree = "<group>";
 		};
-		B20C812E5CEF82AED5ACAF1428426FDA /* QPXExpressWrapper */ = {
+		AFA57147BCAA22369FF573FB56DDAA3C /* QPXExpressWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				24FA5C3ABBF2C31B85E8623B69679A9C /* Classes */,
+				DC2F58EFE0A341A947C638E4D45A2F48 /* Classes */,
 			);
 			path = QPXExpressWrapper;
 			sourceTree = "<group>";
@@ -251,10 +224,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DC2F58EFE0A341A947C638E4D45A2F48 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BB9204011153815E28ED37DA40761E54 /* SearchResults.swift */,
+				DB4B145CD36FF97BBDD46CC16423E1AC /* TripOption.swift */,
+				B536B8093E47E9E73B0F8E80A42891DB /* TripOptionPricing.swift */,
+				F4BC74D3348BA7D84B81607CE4A1C05C /* TripOptionPricingFare.swift */,
+				F3051BF6FA8E854426193FED55E4E697 /* TripOptionPricingSegment.swift */,
+				3176E6195CA6FA79E0EF042EAFC36E49 /* TripOptionPricingTax.swift */,
+				09BE9DE6449C9C90AB1774A1BB0B221B /* TripOptionSlice.swift */,
+				88DFDCB7D19098DBE053E22F0476FB57 /* TripOptionSliceSegment.swift */,
+				7A5C2449C2241EE52B88084FEE95A57E /* TripOptionSliceSegmentFlight.swift */,
+				8E0C8AADD218B5070CADDCEE71C16475 /* TripOptionSliceSegmentLeg.swift */,
+				CE56FCB73D5CC610759B79A4D9DC2247 /* TripRequest.swift */,
+				35600F142B3CDF883028DAA6C264C0DA /* TripRequestPassengers.swift */,
+				F0897486C2744DF19E26E321C42D2F0A /* TripRequestSlice.swift */,
+				77CA33F74B4F07B838EA6A0293646CC4 /* Trips.swift */,
+				A8A7AEFAA2AE84501357A9C5E2E6AC81 /* TripsData.swift */,
+				D9D1FF964180C001D3C55D74761A9348 /* TripsDataAircraft.swift */,
+				B7E116CDB94029719367F9E1BFC78368 /* TripsDataAirport.swift */,
+				09B253C4F8AF2315BC54C068CAB389EA /* TripsDataCarrier.swift */,
+				053F05162CAE1EA57497F6DCD26102F4 /* TripsDataCity.swift */,
+				11727C3BFBDD0F4E11B2162F47D98435 /* TripsDataTax.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		DF384E967B549738195FCB369702F3A3 /* QPXExpressWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				B20C812E5CEF82AED5ACAF1428426FDA /* QPXExpressWrapper */,
+				AFA57147BCAA22369FF573FB56DDAA3C /* QPXExpressWrapper */,
 				BA4FCA72889EC1104B416135FF47C448 /* Support Files */,
 			);
 			name = QPXExpressWrapper;
@@ -313,7 +313,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F805068D6A0533957392F77A997FB1D0 /* Build configuration list for PBXNativeTarget "QPXExpressWrapper" */;
 			buildPhases = (
-				DE15ECCFC8B735F7BCCE083D0596CC0F /* Sources */,
+				89C67D1BBE7DDFAF693FBD3B879D0E0B /* Sources */,
 				CF8797D84B71107194818782B51A47EF /* Frameworks */,
 				39BEE9F6C099035910C4D9CF62A8FAA6 /* Headers */,
 			);
@@ -406,31 +406,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE15ECCFC8B735F7BCCE083D0596CC0F /* Sources */ = {
+		89C67D1BBE7DDFAF693FBD3B879D0E0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6071A2854F81B895F37231C8A9E4C5E /* QPXExpressWrapper-dummy.m in Sources */,
-				5B991A6C3540D1404EBB2363760F1D92 /* SearchResults.swift in Sources */,
-				B896ED7182211D2469C78B2913DC30E2 /* TripOption.swift in Sources */,
-				0F4E8CAF3DE22AFB1C67C16651C94318 /* TripOptionPricing.swift in Sources */,
-				F39FECCC2AA352250D7B892230652A8D /* TripOptionPricingFare.swift in Sources */,
-				7A062220DD70E94A7C045F58B6548EF6 /* TripOptionPricingSegment.swift in Sources */,
-				FCDA3D251E8B239D1FEFAD1F5C418F84 /* TripOptionPricingTax.swift in Sources */,
-				6046F65186AC1DB8CF852A703D5FDBE5 /* TripOptionSlice.swift in Sources */,
-				33B7BEEB1C8B6E54688FA3138EDADE0D /* TripOptionSliceSegment.swift in Sources */,
-				FC48A121CC59DD65F2D0C986EFC03112 /* TripOptionSliceSegmentFlight.swift in Sources */,
-				90875BC775E12D91FAD0B48C28FE8FDD /* TripOptionSliceSegmentLeg.swift in Sources */,
-				6BD02AA751B455F43E47F6B91BF0CB99 /* TripRequest.swift in Sources */,
-				A6D0E98330948C2BCC4296108C4369D9 /* TripRequestPassengers.swift in Sources */,
-				FFC62F0CD0DECD11050C428056AD3171 /* TripRequestSlice.swift in Sources */,
-				3C12092BAECDF5D24BA8DD0886F0065B /* Trips.swift in Sources */,
-				83DA9AE4AB1366A20A9F4D6D7ED4BB6D /* TripsData.swift in Sources */,
-				F723FB3E52907FDD56321315904BB1D0 /* TripsDataAircraft.swift in Sources */,
-				CA15AD1EBF842FB936A7500AC6AE1FDF /* TripsDataAirport.swift in Sources */,
-				1B17E82E72BC30D04B52D012E56E07FD /* TripsDataCarrier.swift in Sources */,
-				7433047EA8FFB177D186D723D5FE47C3 /* TripsDataCity.swift in Sources */,
-				8925EEF8156FD78D914D30748A442F65 /* TripsDataTax.swift in Sources */,
+				F0B883FD7170914F1969BDA7438531C4 /* QPXExpressWrapper-dummy.m in Sources */,
+				11707596C1EB08A3327F733722D5C1CD /* SearchResults.swift in Sources */,
+				51F8741ECDD2E9EF7671A4B9C4707CBF /* TripOption.swift in Sources */,
+				79A42018B17B3500C33BA39422C9326A /* TripOptionPricing.swift in Sources */,
+				C08566A208216EE184FD208F1DAFB7D7 /* TripOptionPricingFare.swift in Sources */,
+				E69F173717E243D9009609A8CCA335E1 /* TripOptionPricingSegment.swift in Sources */,
+				C75ADCDC2A7FDF638B46A22BD2AAC163 /* TripOptionPricingTax.swift in Sources */,
+				66B0BC99547816E3A3604BB9C718904D /* TripOptionSlice.swift in Sources */,
+				0A9B1A9A50FE7F0741239CDCC0FE1198 /* TripOptionSliceSegment.swift in Sources */,
+				9F4A099D1B60649DC4E0123848C8CEEC /* TripOptionSliceSegmentFlight.swift in Sources */,
+				7DD579DCD30FE8E422BEA735C7FFFF05 /* TripOptionSliceSegmentLeg.swift in Sources */,
+				90CAB3B15285D03EDE5619016C6DAED4 /* TripRequest.swift in Sources */,
+				0E874B3BDDE90157F9D237445BE395A6 /* TripRequestPassengers.swift in Sources */,
+				517C833FCFC49340476377788A6231E9 /* TripRequestSlice.swift in Sources */,
+				B28ADE4A6C2CEA568038DB7C9AA99672 /* Trips.swift in Sources */,
+				63181D85C7721FBCCC2BC69995C4D170 /* TripsData.swift in Sources */,
+				A0635E358766BE088B3BA242745D8E08 /* TripsDataAircraft.swift in Sources */,
+				F4835104740817980332B0643408D481 /* TripsDataAirport.swift in Sources */,
+				487CF3FE6E9D4CB436E00E081E00F991 /* TripsDataCarrier.swift in Sources */,
+				B5ECACE64A94D9FCC82EFB6D818B8599 /* TripsDataCity.swift in Sources */,
+				106359B7140E68CD96CD1FB4E3E9CD53 /* TripsDataTax.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
