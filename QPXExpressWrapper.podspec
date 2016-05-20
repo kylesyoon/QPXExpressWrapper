@@ -25,7 +25,7 @@ This CocoaPod provides the model layer and query utilities to use the QPX Expres
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Kyle Yoon" => "apps.yoon@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/QPXExpressWrapper.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/yoonapps/QPXExpressWrapper.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
