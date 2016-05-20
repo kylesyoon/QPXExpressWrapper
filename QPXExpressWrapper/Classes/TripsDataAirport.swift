@@ -9,10 +9,11 @@
 import Foundation
 
 public struct TripsDataAirport {
-    let kind: String
-    let code: String
-    let city: String
-    let name: String
+    
+    public let kind: String
+    public let code: String
+    public let city: String
+    public let name: String
     
     init(kind: String, code: String, city: String, name: String) {
         self.kind = kind
@@ -35,6 +36,7 @@ public struct TripsDataAirport {
         
         return nil
     }
+    
 }
 
 //TODO: Equatable protocol

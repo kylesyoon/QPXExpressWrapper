@@ -9,11 +9,12 @@
 import Foundation
 
 public struct TripOption {
-    let kind: String
-    let saleTotal: String
-    let identifier: String
-    let slice: [TripOptionSlice]
-    let pricing: [TripOptionPricing]
+    
+    public let kind: String
+    public let saleTotal: String
+    public let identifier: String
+    public let slice: [TripOptionSlice]
+    public let pricing: [TripOptionPricing]
     
     init(kind: String,
         saleTotal: String,

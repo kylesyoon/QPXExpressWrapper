@@ -9,9 +9,10 @@
 import Foundation
 
 public struct TripsDataAircraft {
-    let kind: String?
-    let code: String?
-    let name: String?
+    
+    public let kind: String?
+    public let code: String?
+    public let name: String?
     
     init(kind: String, code: String, name: String) {
         self.kind = kind
@@ -30,6 +31,7 @@ public struct TripsDataAircraft {
         
         return nil
     }
+    
 }
 
 extension TripsDataAircraft: Equatable {}

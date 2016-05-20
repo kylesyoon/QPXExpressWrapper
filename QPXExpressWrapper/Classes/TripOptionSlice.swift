@@ -9,9 +9,10 @@
 import Foundation
 
 public struct TripOptionSlice {
-    let kind: String
-    let duration: Int
-    let segment: [TripOptionSliceSegment]
+    
+    public let kind: String
+    public let duration: Int
+    public let segment: [TripOptionSliceSegment]
     
     init(kind: String,
         duration: Int,

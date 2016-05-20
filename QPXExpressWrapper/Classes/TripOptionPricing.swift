@@ -9,17 +9,18 @@
 import Foundation
 
 public struct TripOptionPricing {
-    let kind: String
-    let fare: [TripOptionPricingFare]
-    let segmentPricing: [TripOptionPricingSegment]
-    let baseFareTotal: String
-    let saleFareTotal: String
-    let saleTotal: String
-    let passengers: TripRequestPassengers
-    let tax: [TripOptionPricingTax]
-    let fareCalculation: String
-    let latestTicketingTime: NSDate
-    let ptc: String
+    
+    public let kind: String
+    public let fare: [TripOptionPricingFare]
+    public let segmentPricing: [TripOptionPricingSegment]
+    public let baseFareTotal: String
+    public let saleFareTotal: String
+    public let saleTotal: String
+    public let passengers: TripRequestPassengers
+    public let tax: [TripOptionPricingTax]
+    public let fareCalculation: String
+    public let latestTicketingTime: NSDate
+    public let ptc: String
     
     init(kind: String,
         fare: [TripOptionPricingFare],

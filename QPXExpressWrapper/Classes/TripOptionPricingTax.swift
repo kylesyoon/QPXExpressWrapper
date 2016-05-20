@@ -9,12 +9,13 @@
 import Foundation
 
 public struct TripOptionPricingTax {
-    let kind: String
-    let identifier: String
-    let chargeType: String
-    let code: String
-    let country: String
-    let salePrice: String
+    
+    public let kind: String
+    public let identifier: String
+    public let chargeType: String
+    public let code: String
+    public let country: String
+    public let salePrice: String
     
     init(kind: String, 
         identifier: String, 
@@ -47,6 +48,7 @@ public struct TripOptionPricingTax {
         
         return nil
     }
+    
 }
 
 extension TripOptionPricingTax: Equatable {}

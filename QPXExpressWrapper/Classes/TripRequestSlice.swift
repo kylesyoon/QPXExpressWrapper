@@ -10,19 +10,19 @@ import Foundation
 
 public struct TripRequestSlice {
     
-    let kind: String = "qpxexpress#sliceInput"
-    let origin: String
-    let destination: String
-    let date: NSDate
+    public let kind: String = "qpxexpress#sliceInput"
+    public let origin: String
+    public let destination: String
+    public let date: NSDate
     
     // Not using yet
-    let maxStops: Int?
-    let maxConnectionDuration: Int?
-    let preferredCabin: String?
-    let permittedDepartureTime: [String: String]?
-    let permittedCarrier: [String]?
-    let alliance: String?
-    let prohibitedCarrier: [String]?
+    public let maxStops: Int?
+    public let maxConnectionDuration: Int?
+    public let preferredCabin: String?
+    public let permittedDepartureTime: [String: String]?
+    public let permittedCarrier: [String]?
+    public let alliance: String?
+    public let prohibitedCarrier: [String]?
     
     public init(origin: String,
                 destination: String,

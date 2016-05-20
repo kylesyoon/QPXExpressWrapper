@@ -9,12 +9,13 @@
 import Foundation
 
 public struct TripsData {
-    let kind: String
-    let airport: [TripsDataAirport]
-    let city: [TripsDataCity]
-    let aircraft: [TripsDataAircraft]
-    let tax: [TripsDataTax]
-    let carrier: [TripsDataCarrier]
+    
+    public let kind: String
+    public let airport: [TripsDataAirport]
+    public let city: [TripsDataCity]
+    public let aircraft: [TripsDataAircraft]
+    public let tax: [TripsDataTax]
+    public let carrier: [TripsDataCarrier]
     
     init(kind: String,
         airport: [TripsDataAirport],

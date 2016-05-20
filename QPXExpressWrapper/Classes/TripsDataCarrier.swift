@@ -9,9 +9,10 @@
 import Foundation
 
 public struct TripsDataCarrier {
-    let kind: String
-    let code: String
-    let name: String
+    
+    public let kind: String
+    public let code: String
+    public let name: String
     
     init(kind: String,
         code: String,
@@ -32,6 +33,7 @@ public struct TripsDataCarrier {
         
         return nil
     }
+    
 }
 
 extension TripsDataCarrier: Equatable {}

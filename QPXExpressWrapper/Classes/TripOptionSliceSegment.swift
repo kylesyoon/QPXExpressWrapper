@@ -9,16 +9,17 @@
 import Foundation
 
 public struct TripOptionSliceSegment {
-    let kind: String
-    let duration: Int
-    let flight: TripOptionSliceSegmentFlight
-    let identifier: String
-    let cabin: String
-    let bookingCode: String
-    let bookingCodeCount: Int
-    let marriedSegmentGroup: String
-    let leg: [TripOptionSliceSegmentLeg]
-    let connectionDuration: Int?
+    
+    public let kind: String
+    public let duration: Int
+    public let flight: TripOptionSliceSegmentFlight
+    public let identifier: String
+    public let cabin: String
+    public let bookingCode: String
+    public let bookingCodeCount: Int
+    public let marriedSegmentGroup: String
+    public let leg: [TripOptionSliceSegmentLeg]
+    public let connectionDuration: Int?
     
     init(kind: String,
         duration: Int,

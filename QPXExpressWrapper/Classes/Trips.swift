@@ -9,19 +9,20 @@
 import Foundation
 
 public struct Trips {
-    let kind: String
-    let requestID: String
-    let data: TripsData
-    let tripOptions: [TripOption]
+    
+    public let kind: String
+    public let requestID: String
+    public let data: TripsData
+    public let tripOptions: [TripOption]
     
     init(kind: String,
-        requestID: String, 
-        data: TripsData,
-        tripOptions: [TripOption]) {
-            self.kind = kind
-            self.requestID = requestID
-            self.data = data
-            self.tripOptions = tripOptions
+         requestID: String,
+         data: TripsData,
+         tripOptions: [TripOption]) {
+        self.kind = kind
+        self.requestID = requestID
+        self.data = data
+        self.tripOptions = tripOptions
     }
     
     static func decode(jsonDict: [String: AnyObject]) -> Trips? {

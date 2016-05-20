@@ -10,12 +10,12 @@ import Foundation
 
 public struct TripRequestPassengers {
     
-    let kind: String = "qpxexpress#passengerCounts"
-    var adultCount: Int = 1
-    let childCount: Int?
-    let infantInLapCount: Int?
-    let infantInSeatCount: Int?
-    let seniorCount: Int?
+    public let kind: String = "qpxexpress#passengerCounts"
+    public var adultCount: Int = 1
+    public let childCount: Int?
+    public let infantInLapCount: Int?
+    public let infantInSeatCount: Int?
+    public let seniorCount: Int?
     
     public init(adultCount: Int,
                 childCount: Int?,

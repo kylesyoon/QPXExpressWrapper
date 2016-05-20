@@ -9,8 +9,9 @@
 import Foundation
 
 public struct TripOptionSliceSegmentFlight {
-    let carrier: String
-    let number: String
+    
+    public let carrier: String
+    public let number: String
     
     init(number: String, carrier: String) {
         self.number = number

@@ -10,12 +10,12 @@ import Foundation
 
 public struct TripRequest {
 
-    let passengers: TripRequestPassengers
-    let slice: [TripRequestSlice]
-    let maxPrice: String?
-    let saleCountry: String?
-    let refundable: Bool?
-    let solutions: Int?
+    public let passengers: TripRequestPassengers
+    public let slice: [TripRequestSlice]
+    public let maxPrice: String?
+    public let saleCountry: String?
+    public let refundable: Bool?
+    public let solutions: Int?
     
     public init(passengers: TripRequestPassengers,
                 slice: [TripRequestSlice],

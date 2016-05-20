@@ -10,22 +10,22 @@ import Foundation
 
 public struct TripOptionSliceSegmentLeg {
     
-    let kind: String
-    let identifier: String
-    let aircraft: String
-    let arrivalTime: NSDate
-    let departureTime: NSDate
-    let origin: String
-    let destination: String
-    let originTerminal: String?
-    let destinationTerminal: String?
-    let duration: Int
-    let onTimePerformance: Int?
-    let operatingDisclosure: String?
-    let mileage: Int
-    let meal: String?
-    let secure: Bool
-    let connectionDuration: Int?
+    public let kind: String
+    public let identifier: String
+    public let aircraft: String
+    public let arrivalTime: NSDate
+    public let departureTime: NSDate
+    public let origin: String
+    public let destination: String
+    public let originTerminal: String?
+    public let destinationTerminal: String?
+    public let duration: Int
+    public let onTimePerformance: Int?
+    public let operatingDisclosure: String?
+    public let mileage: Int
+    public let meal: String?
+    public let secure: Bool
+    public let connectionDuration: Int?
     
     init(kind: String,
         identifier: String,

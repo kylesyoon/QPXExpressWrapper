@@ -19,12 +19,19 @@ class SearchViewController: UIViewController {
     @IBOutlet var destinationTextField: UITextField!
     @IBOutlet var departureDateButton: UIButton!
     @IBOutlet var returnDateButton: UIButton!
-    @IBOutlet var passengerCountSlider: UISlider!
-    @IBOutlet var passengerCountLabel: UILabel!
+    @IBOutlet var adultCountStepper: UIStepper!
+    @IBOutlet var adultCountLabel: UILabel!
     
     var departureDate: NSDate?
     var returnDate: NSDate?
     lazy var dateFormatter = NSDateFormatter()
+    var adultCount = 1
+    var isRoundTrip = false
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.returnDateButton.hidden = true
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == DateViewController.departureDateSegueIdentifier || segue.identifier == DateViewController.returnDateSegueIdentifier {
@@ -35,12 +42,13 @@ class SearchViewController: UIViewController {
                     dateViewController.delegate = self
                 }
                 datePopoverNavController.preferredContentSize = CGSizeMake(CGRectGetWidth(self.view.frame), self.view.frame.size.height / 4)
-                let datePresentationController = datePopoverNavController.popoverPresentationController
-                datePresentationController?.delegate = self
-                datePresentationController?.permittedArrowDirections = UIPopoverArrowDirection.Up
-                if let dateButton = sender as? UIButton {
-                    datePresentationController?.sourceRect = dateButton.frame
-                    datePresentationController?.sourceView = dateButton
+                if let datePresentationController = datePopoverNavController.popoverPresentationController {
+                    datePresentationController.delegate = self
+                    datePresentationController.permittedArrowDirections = UIPopoverArrowDirection.Up
+                    if let dateButton = sender as? UIButton {
+                        datePresentationController.sourceRect = dateButton.frame
+                        datePresentationController.sourceView = dateButton
+                    }
                 }
             }
         }
@@ -64,15 +72,30 @@ class SearchViewController: UIViewController {
                                                   permittedCarrier: nil,
                                                   alliance: nil,
                                                   prohibitedCarrier: nil)
+        var requestTripSlices = [departureTripSlice]
         
-        let requestPassengers = TripRequestPassengers(adultCount: Int(self.passengerCountSlider.value),
+        if let returnDate = self.returnDate where isRoundTrip {
+            let returnTripSlice = TripRequestSlice(origin: destination,
+                                                   destination: origin,
+                                                   date: returnDate, 
+                                                   maxStops: nil, 
+                                                   maxConnectionDuration: nil, 
+                                                   preferredCabin: nil, 
+                                                   permittedDepartureTime: nil, 
+                                                   permittedCarrier: nil, 
+                                                   alliance: nil, 
+                                                   prohibitedCarrier: nil)
+            requestTripSlices.append(returnTripSlice)
+        }
+        
+        let requestPassengers = TripRequestPassengers(adultCount: self.adultCount,
                                                       childCount: nil,
                                                       infantInLapCount: nil,
                                                       infantInSeatCount: nil,
                                                       seniorCount: nil)
         
         return TripRequest(passengers: requestPassengers,
-                           slice: [departureTripSlice],
+                           slice: requestTripSlices,
                            maxPrice: nil,
                            saleCountry: nil,
                            refundable: nil,
@@ -80,40 +103,61 @@ class SearchViewController: UIViewController {
     }
     
     private func query() {
-        guard let tripRequest = self.tripRequest() else {
+        guard let tripRequest = self.tripRequest(),
+            searchURLComponents = NSURLComponents(string: self.searchURLString) else {
             return
         }
         
-        let requestBody = tripRequest.jsonDict()
+        let keyQueryItem = NSURLQueryItem(name: "key", value: self.yourAPIKey)
+        searchURLComponents.queryItems = [keyQueryItem]
         
-        if let searchURL = NSURL(string: self.searchURLString) {
-            let request = NSMutableURLRequest(URL: searchURL)
-            request.HTTPMethod = "POST"
-            
-            guard let json = try? NSJSONSerialization.dataWithJSONObject(requestBody, options: .PrettyPrinted) else {
+        guard let searchURL = searchURLComponents.URL else {
+            return
+        }
+        
+        let request = NSMutableURLRequest(URL: searchURL)
+        request.HTTPMethod = "POST"
+        
+        let requestBody = tripRequest.jsonDict()
+        guard let json = try? NSJSONSerialization.dataWithJSONObject(requestBody, options: .PrettyPrinted) else {
+            return
+        }
+        request.HTTPBody = json
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
+            data, response, error in
+            guard let data = data else {
+                print("No data")
                 return
             }
-            request.HTTPBody = json
-            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            request.addValue("application/json", forHTTPHeaderField: "Accept")
             
-            let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
-                data, response, error in
-                if let data = data {
-                    guard let responseObject = try? NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) else {
-                        return
-                    }
-                    print("\(responseObject)")
+            do {
+                guard let jsonDict = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) as? [String: AnyObject] else {
+                    return
                 }
+                guard let searchResults = SearchResults.decode(jsonDict) else {
+                    print("Not a SearchResults JSON dictionary")
+                    return
+                }
+                
+                print("\(searchResults)")
+            } catch {
+                print("Serialization error")
             }
-            task.resume()
         }
+        
+        task.resume()
     }
     
-    @IBAction func valueDidChangeForSlider(slider: UISlider) {
-        let roundedValue = round(slider.value)
-        slider.value = roundedValue
-        self.passengerCountLabel.text = "\(roundedValue)"
+    @IBAction func valueDidChangeForAdultCountStepper(stepper: UIStepper) {
+        self.adultCountLabel.text = "Adults: \(Int(stepper.value))"
+        self.adultCount = Int(stepper.value)
+    }
+    
+    @IBAction func valueDidChangeForSegmentedControl(control: UISegmentedControl) {
+        self.returnDateButton.hidden = control.selectedSegmentIndex == 0
     }
     
     @IBAction func didTapSearchButton(sender: AnyObject) {

@@ -10,15 +10,15 @@ import Foundation
 
 public struct SearchResults {
     
-    let kind: String
-    let trips: Trips
+    public let kind: String
+    public let trips: Trips
     
     init(kind: String, trips: Trips) {
         self.kind = kind
         self.trips = trips
     }
     
-    static func decode(jsonDict: NSDictionary) -> SearchResults? {
+    public static func decode(jsonDict: [String: AnyObject]) -> SearchResults? {
         if let kind = jsonDict["kind"] as? String,
             trips = jsonDict["trips"] as? [String: AnyObject] {
             if let trips = Trips.decode(trips) {

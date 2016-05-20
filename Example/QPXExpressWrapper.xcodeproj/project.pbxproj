@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4870969F85F4E26A52F0D368 /* Pods_QPXExpressWrapper_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5526418092FFBC5B1DDFE2AC /* Pods_QPXExpressWrapper_Example.framework */; };
-		5103CE961CEBD28600768090 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5103CE951CEBD28600768090 /* ResultsViewController.swift */; };
 		5103CEC21CEBDE4700768090 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5103CEC11CEBDE4700768090 /* DateViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* SearchViewController.swift */; };
@@ -31,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		1440C53586B68BE5CBE6B901 /* Pods_QPXExpressWrapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QPXExpressWrapper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5103CE951CEBD28600768090 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		5103CEC11CEBDE4700768090 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
 		5526418092FFBC5B1DDFE2AC /* Pods_QPXExpressWrapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QPXExpressWrapper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF81272E23F71B951D3F940 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* SearchViewController.swift */,
-				5103CE951CEBD28600768090 /* ResultsViewController.swift */,
 				5103CEC11CEBDE4700768090 /* DateViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -368,7 +365,6 @@
 				5103CEC21CEBDE4700768090 /* DateViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* SearchViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				5103CE961CEBD28600768090 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
