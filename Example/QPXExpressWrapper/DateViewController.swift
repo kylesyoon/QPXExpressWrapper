@@ -10,7 +10,7 @@ import UIKit
 
 protocol DateViewControllerDelegate {
     
-    func dateViewController(dateViewController: DateViewController, didTapDoneWithDate date: NSDate)
+    func dateViewController(_ dateViewController: DateViewController, didTapDoneWithDate date: Date)
     
 }
 
@@ -26,15 +26,15 @@ class DateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.datePicker.minimumDate = NSDate()
+        self.datePicker.minimumDate = Date()
     }
     
-    @IBAction func didTapDoneButton(sender: AnyObject) {
+    @IBAction func didTapDoneButton(_ sender: AnyObject) {
         if let delegate = self.delegate {
             delegate.dateViewController(self,
                 didTapDoneWithDate: self.datePicker.date)
         }
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

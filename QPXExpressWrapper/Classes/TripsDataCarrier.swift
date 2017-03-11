@@ -7,31 +7,21 @@
 //
 
 import Foundation
+import Gloss
 
-public struct TripsDataCarrier {
+public struct TripsDataCarrier: Decodable {
     
-    public let kind: String
-    public let code: String
-    public let name: String
+    public let kind: String?
+    public let code: String?
+    public let name: String?
     
-    init(kind: String,
-        code: String,
-        name: String) {
-            self.kind = kind
-            self.code = code
-            self.name = name
-    }
-    
-    static func decode(jsonDict: [String: AnyObject]) -> TripsDataCarrier? {
-        if let kind = jsonDict["kind"] as? String,
-            code = jsonDict["code"] as? String,
-            name = jsonDict["name"] as? String {
-                return TripsDataCarrier(kind: kind,
-                    code: code,
-                    name: name)
+    public init?(json: JSON) {
+        guard let kind: String = "kind" <~~ json else {
+            return nil
         }
-        
-        return nil
+        self.kind = kind
+        self.code = "code" <~~ json
+        self.name = "name" <~~ json
     }
     
 }

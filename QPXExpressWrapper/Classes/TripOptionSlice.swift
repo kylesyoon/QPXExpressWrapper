@@ -7,46 +7,28 @@
 //
 
 import Foundation
+import Gloss
 
-public struct TripOptionSlice {
+public struct TripOptionSlice: Decodable {
     
     public let kind: String
-    public let duration: Int
-    public let segment: [TripOptionSliceSegment]
+    public let duration: Int?
+    public let segment: [TripOptionSliceSegment]?
     
-    init(kind: String,
-        duration: Int,
-        segment: [TripOptionSliceSegment]) {
-            self.kind = kind
-            self.duration = duration
-            self.segment = segment
-    }
-    
-    static func decode(jsonDict: [String: AnyObject]) -> TripOptionSlice? {
-        if let kind = jsonDict["kind"] as? String,
-            duration = jsonDict["duration"] as? Int,
-            segment = jsonDict["segment"] as? [[String : AnyObject]] {
-            var decodedSegments = [TripOptionSliceSegment]()
-            for aSegment in segment {
-                if let decodedSegment = TripOptionSliceSegment.decode(aSegment) {
-                    decodedSegments.append(decodedSegment)
-                }
-            }
-            
-            return TripOptionSlice(kind: kind,
-                                   duration: duration,
-                                   segment: decodedSegments)
+    public init?(json: JSON) {
+        guard let kind: String = "kind" <~~ json else {
+            return nil
         }
         
-        return nil
+        self.kind = kind
+        self.duration = "duration" <~~ json
+        if let jsonSegment = json["segment"] as? [JSON],
+            let segment = [TripOptionSliceSegment].from(jsonArray: jsonSegment) {
+            self.segment = segment
+        }
+        else {
+            self.segment = nil
+        }
     }
-    
-}
 
-extension TripOptionSlice: Equatable {}
-
-public func ==(lhs: TripOptionSlice, rhs: TripOptionSlice) -> Bool {
-    return lhs.kind == rhs.kind &&
-        lhs.duration == rhs.duration &&
-        lhs.segment == rhs.segment
 }

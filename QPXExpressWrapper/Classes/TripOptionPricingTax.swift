@@ -7,48 +7,29 @@
 //
 
 import Foundation
+import Gloss
 
-public struct TripOptionPricingTax {
+public struct TripOptionPricingTax: Decodable {
     
     public let kind: String
-    public let identifier: String
-    public let chargeType: String
-    public let code: String
-    public let country: String
-    public let salePrice: String
+    public let identifier: String?
+    public let chargeType: String?
+    public let code: String?
+    public let country: String?
+    public let salePrice: String?
     
-    init(kind: String, 
-        identifier: String, 
-        chargeType: String, 
-        code: String, 
-        country: String, 
-        salePrice: String) {
-            self.kind = kind
-            self.identifier = identifier
-            self.chargeType = chargeType
-            self.code = code
-            self.country = country
-            self.salePrice = salePrice
-    }
-    
-    static func decode(jsonDict: [String: AnyObject]) -> TripOptionPricingTax? {
-        if let kind = jsonDict["kind"] as? String, 
-            identifier = jsonDict["id"] as? String, 
-            chargeType = jsonDict["chargeType"] as? String, 
-            code = jsonDict["code"] as? String, 
-            country = jsonDict["country"] as? String,
-            salePrice = jsonDict["salePrice"] as? String {
-                return TripOptionPricingTax(kind: kind, 
-                    identifier: identifier, 
-                    chargeType: chargeType,
-                    code: code, 
-                    country: country,
-                    salePrice: salePrice)
+    public init?(json: JSON) {
+        guard let kind: String = "kind" <~~ json else {
+            return nil
         }
-        
-        return nil
+        self.kind = kind
+        self.identifier = "id" <~~ json
+        self.chargeType = "chargeType" <~~ json
+        self.code = "code" <~~ json
+        self.country = "country" <~~ json
+        self.salePrice = "salePrice" <~~ json
     }
-    
+
 }
 
 extension TripOptionPricingTax: Equatable {}

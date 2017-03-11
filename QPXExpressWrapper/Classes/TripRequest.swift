@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import Gloss
 
-public struct TripRequest {
+public struct TripRequest: Decodable, Encodable {
 
     public let passengers: TripRequestPassengers
     public let slice: [TripRequestSlice]
@@ -23,36 +24,40 @@ public struct TripRequest {
                 saleCountry: String?,
                 refundable: Bool?,
                 solutions: Int?) {
-            self.passengers = passengers
-            self.slice = slice
-            self.maxPrice = maxPrice
-            self.saleCountry = saleCountry
-            self.refundable = refundable
-            self.solutions = solutions
+        self.passengers = passengers
+        self.slice = slice
+        self.maxPrice = maxPrice
+        self.saleCountry = saleCountry
+        self.refundable = refundable
+        self.solutions = solutions
     }
     
-    public func jsonDict() -> [String: AnyObject] {
-        var jsonDict = ["passengers": self.passengers.jsonDict()].mutableCopy() as! [String: AnyObject]
-        let slicesJSONArray = self.slice.map { slice in slice.jsonDict() }
-        jsonDict["slice"] = slicesJSONArray
-        
-        if let maxPrice = self.maxPrice {
-            jsonDict["maxPrice"] = maxPrice
+    public init?(json: JSON) {
+        guard let passengers: TripRequestPassengers = "passengers" <~~ json,
+            let sliceJSON = json["slice"] as? [JSON],
+            let slice = [TripRequestSlice].from(jsonArray: sliceJSON) else {
+            return nil
         }
-        
-        if let saleCountry = self.saleCountry {
-            jsonDict["saleCountry"] = saleCountry
+        self.passengers = passengers
+        self.slice = slice
+        self.maxPrice = "maxPrice" <~~ json
+        self.saleCountry = "saleCountry" <~~ json
+        self.refundable = "refundable" <~~ json
+        self.solutions = "solutions" <~~ json
+    }
+    
+    public func toJSON() -> JSON? {
+        guard let sliceJSON = self.slice.toJSONArray() else {
+            return nil
         }
-        
-        if let refundable = self.refundable {
-            jsonDict["refundable"] = refundable
-        }
-        
-        if let solutions = self.solutions {
-            jsonDict["solution"] = solutions
-        }
+        return ["request" : jsonify([
+            "passengers" ~~> self.passengers,
+            "slice" ~~> sliceJSON,
+            "maxPrice" ~~> self.maxPrice,
+            "saleCountry" ~~> self.saleCountry,
+            "refundable" ~~> self.refundable,
+            "solutions" ~~> self.solutions
+            ])]
+    }
 
-        return ["request": jsonDict]
-    }
-    
 }

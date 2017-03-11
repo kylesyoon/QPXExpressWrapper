@@ -7,29 +7,22 @@
 //
 
 import Foundation
+import Gloss
 
-public struct TripOptionPricingSegment {
+public struct TripOptionPricingSegment: Decodable {
     
     public let kind: String
-    public let fareID: String
-    public let segmentID: String
+    public let fareID: String?
+    public let segmentID: String?
     
-    init(kind: String, fareID: String, segmentID: String) {
-        self.kind = kind
-        self.fareID = fareID
-        self.segmentID = segmentID
-    }
-    
-    static func decode(jsonDict: [String: AnyObject]) -> TripOptionPricingSegment? {
-        if let kind = jsonDict["kind"] as? String,
-            fareID = jsonDict["fareId"] as? String,
-            segmentID = jsonDict["segmentId"] as? String {
-                return TripOptionPricingSegment(kind: kind, 
-                    fareID: fareID,
-                    segmentID: segmentID)
+    public init?(json: JSON) {
+        guard let kind: String = "kind" <~~ json else {
+            return nil
         }
         
-        return nil
+        self.kind = kind
+        self.fareID = "fareId" <~~ json
+        self.segmentID = "segmentId" <~~ json
     }
     
 }

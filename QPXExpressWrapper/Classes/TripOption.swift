@@ -7,64 +7,39 @@
 //
 
 import Foundation
+import Gloss
 
-public struct TripOption {
+public struct TripOption: Decodable {
     
     public let kind: String
-    public let saleTotal: String
-    public let identifier: String
-    public let slice: [TripOptionSlice]
-    public let pricing: [TripOptionPricing]
+    public let saleTotal: String?
+    public let identifier: String?
+    public let slice: [TripOptionSlice]?
+    public let pricing: [TripOptionPricing]?
     
-    init(kind: String,
-        saleTotal: String,
-        identifier: String, 
-        slice: [TripOptionSlice],
-        pricing: [TripOptionPricing]) {
-            self.kind = kind
-            self.saleTotal = saleTotal
-            self.identifier = identifier
-            self.slice = slice
-            self.pricing = pricing
-    }
-    
-    static func decode(jsonDict: [String: AnyObject]) -> TripOption? {
-        if let kind = jsonDict["kind"] as? String,
-            saleTotal = jsonDict["saleTotal"] as? String,
-            identifier = jsonDict["id"] as? String,
-            slice = jsonDict["slice"] as? [[String: AnyObject]],
-            pricing = jsonDict["pricing"] as? [[String: AnyObject]] {
-            var decodedSlices = [TripOptionSlice]()
-            for aSlice in slice {
-                if let decodedSlice = TripOptionSlice.decode(aSlice) {
-                    decodedSlices.append(decodedSlice)
-                }
-            }
-            var decodedPricings = [TripOptionPricing]()
-            for aPricing in pricing {
-                if let decodedPricing = TripOptionPricing.decode(aPricing) {
-                    decodedPricings.append(decodedPricing)
-                }
-            }
-            
-            return TripOption(kind: kind,
-                              saleTotal: saleTotal,
-                              identifier: identifier,
-                              slice: decodedSlices,
-                              pricing: decodedPricings)
+    public init?(json: JSON) {
+        guard let kind: String = "kind" <~~ json else {
+            return nil
         }
         
-        return nil
+        self.kind = kind
+        self.saleTotal = "saleTotal" <~~ json
+        self.identifier = "id" <~~ json
+        if let jsonSlice = json["slice"] as? [JSON],
+            let slice = [TripOptionSlice].from(jsonArray: jsonSlice) {
+            self.slice = slice
+        }
+        else {
+            self.slice = nil
+        }
+        
+        if let jsonPricing = json["pricing"] as? [JSON],
+            let pricing = [TripOptionPricing].from(jsonArray: jsonPricing) {
+            self.pricing = pricing
+        }
+        else {
+            self.pricing = nil
+        }
     }
     
-}
-
-extension TripOption: Equatable {}
-
-public func ==(lhs: TripOption, rhs: TripOption) -> Bool {
-    return lhs.kind == rhs.kind &&
-        lhs.saleTotal == rhs.saleTotal &&
-        lhs.identifier == rhs.identifier && 
-        lhs.slice == rhs.slice &&
-        lhs.pricing == rhs.pricing
 }

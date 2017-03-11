@@ -7,127 +7,60 @@
 //
 
 import Foundation
+import Gloss
 
-public struct TripOptionSliceSegmentLeg {
+public struct TripOptionSliceSegmentLeg: Decodable {
     
     public let kind: String
-    public let identifier: String
-    public let aircraft: String
-    public let arrivalTime: NSDate
-    public let departureTime: NSDate
-    public let origin: String
-    public let destination: String
+    public let identifier: String?
+    public let aircraft: String?
+    public let arrivalTime: Date? // TODO: We have to show the local time of that location.
+    public let departureTime: Date? // TODO: We have to show the local time of that location.
+    public let origin: String?
+    public let destination: String?
     public let originTerminal: String?
     public let destinationTerminal: String?
-    public let duration: Int
+    public let duration: Int?
     public let onTimePerformance: Int?
     public let operatingDisclosure: String?
-    public let mileage: Int
+    public let mileage: Int?
     public let meal: String?
-    public let secure: Bool
+    public let secure: Bool?
     public let connectionDuration: Int?
     
-    init(kind: String,
-        identifier: String,
-        aircraft: String, 
-        arrivalTime: NSDate,  // TODO: We have to show the local time of that location.
-        departureTime: NSDate, // TODO: We have to show the local time of that location.
-        origin: String,
-        destination: String, 
-        originTerminal: String?,
-        destinationTerminal: String?,
-        duration: Int,
-        mileage: Int,
-        meal: String?,
-        secure: Bool,
-        onTimePerformance: Int?,
-        operatingDisclosure: String?,
-        connectionDuration: Int?) {
-            self.kind = kind
-            self.identifier = identifier
-            self.aircraft = aircraft
-            self.arrivalTime = arrivalTime
-            self.departureTime = departureTime
-            self.origin = origin
-            self.destination = destination
-            self.originTerminal = originTerminal
-            self.destinationTerminal = destinationTerminal
-            self.duration = duration
-            self.onTimePerformance = onTimePerformance
-            self.operatingDisclosure = operatingDisclosure
-            self.mileage = mileage
-            self.meal = meal
-            self.secure = secure
-            self.connectionDuration = connectionDuration
-    }
-    
-    static func decode(jsonDict: [String: AnyObject]) -> TripOptionSliceSegmentLeg? {
-        if let kind = jsonDict["kind"] as? String,
-            identifier = jsonDict["id"] as? String,
-            aircraft = jsonDict["aircraft"] as? String,
-            arrivalTime = jsonDict["arrivalTime"] as? String,
-            departureTime = jsonDict["departureTime"] as? String,
-            origin = jsonDict["origin"] as? String,
-            destination = jsonDict["destination"] as? String,
-            duration = jsonDict["duration"] as? Int,
-            mileage = jsonDict["mileage"] as? Int,
-            secure = jsonDict["secure"] as? Int {
-            var meal: String?
-            if let unwrappedMeal = jsonDict["meal"] as? String {
-                meal = unwrappedMeal
-            }
-            
-            var operatingDisclosure: String?
-            if let disclosure = jsonDict["operatingDisclosure"] as? String {
-                operatingDisclosure = disclosure
-            }
-            
-            var onTimePerformance: Int?
-            if let performance = jsonDict["onTimePerformance"] as? Int {
-                onTimePerformance = performance
-            }
-            
-            var destinationTerminal: String?
-            if let unwrappedDestinationTerminal = jsonDict["destinationTerminal"] as? String {
-                destinationTerminal = unwrappedDestinationTerminal
-            }
-            
-            var originTerminal: String?
-            if let unwrappedOriginTerminal = jsonDict["originTerminal"] as? String {
-                originTerminal = unwrappedOriginTerminal
-            }
-            
-            var connectionDuration: Int?
-            if let unwrappedConnectionDuration = jsonDict["connectionDuration"] as? Int {
-                connectionDuration = unwrappedConnectionDuration
-            }
-            
-            let dateFormatter = NSDateFormatter()
-            if let formattedArrivalTime = dateFormatter.decodedDate(for: arrivalTime),
-                formattedDepartureTime = dateFormatter.decodedDate(for: departureTime) {
-                return TripOptionSliceSegmentLeg(kind: kind,
-                                                 identifier: identifier,
-                                                 aircraft: aircraft,
-                                                 arrivalTime: formattedArrivalTime,
-                                                 departureTime: formattedDepartureTime,
-                                                 origin: origin,
-                                                 destination: destination,
-                                                 originTerminal: originTerminal,
-                                                 destinationTerminal: destinationTerminal,
-                                                 duration: duration,
-                                                 mileage: mileage,
-                                                 meal: meal,
-                                                 secure: Bool(secure),
-                                                 onTimePerformance: onTimePerformance,
-                                                 operatingDisclosure: operatingDisclosure,
-                                                 connectionDuration: connectionDuration)
-            }
-            
+    public init?(json: JSON) {
+        guard let kind: String = "kind" <~~ json else {
             return nil
         }
-        return nil
+        self.kind = kind
+        self.identifier = "id" <~~ json
+        self.aircraft = "aircraft" <~~ json
+        if let arrivalTimeString: String = "arrivalTime" <~~ json {
+            self.arrivalTime = SearchResults.dateFormatter.decodedDate(for: arrivalTimeString)
+        }
+        else {
+            self.arrivalTime = nil
+        }
+        
+        if let departureTimeString: String = "departureTime" <~~ json {
+            self.departureTime = SearchResults.dateFormatter.decodedDate(for: departureTimeString)
+        }
+        else {
+            self.departureTime = nil
+        }
+        self.origin = "origin" <~~ json
+        self.destination = "destination" <~~ json
+        self.originTerminal = "originTerminal" <~~ json
+        self.destinationTerminal = "destinationTerminal" <~~ json
+        self.duration = "duration" <~~ json
+        self.onTimePerformance = "onTimePerformance" <~~ json
+        self.operatingDisclosure = "operatingDisclosure" <~~ json
+        self.mileage = "mileage" <~~ json
+        self.meal = "meal" <~~ json
+        self.secure = "secure" <~~ json
+        self.connectionDuration = "connectionDuration" <~~ json
     }
-    
+
 }
 
 extension TripOptionSliceSegmentLeg: Equatable {}
@@ -136,8 +69,8 @@ public func ==(lhs: TripOptionSliceSegmentLeg, rhs: TripOptionSliceSegmentLeg) -
     return lhs.kind == rhs.kind &&
         lhs.identifier == rhs.identifier &&
         lhs.aircraft == rhs.aircraft && 
-        lhs.arrivalTime.isEqualToDate(rhs.arrivalTime) && 
-        lhs.departureTime.isEqualToDate(rhs.departureTime) && 
+        (lhs.arrivalTime == rhs.arrivalTime) && 
+        (lhs.departureTime == rhs.departureTime) && 
         lhs.origin == rhs.origin && 
         lhs.destination == rhs.destination && 
         lhs.originTerminal == rhs.originTerminal &&
@@ -149,14 +82,4 @@ public func ==(lhs: TripOptionSliceSegmentLeg, rhs: TripOptionSliceSegmentLeg) -
         lhs.onTimePerformance == rhs.onTimePerformance &&
         lhs.operatingDisclosure == rhs.operatingDisclosure &&
         lhs.connectionDuration == rhs.connectionDuration
-}
-
-// TODO: Where should this live?
-extension NSDateFormatter {
-    
-    func decodedDate(for dateString: String) -> NSDate? {
-        self.dateFormat = "yyyy-MM-dd'T'HH:mmZZZZZ" //"2016-02-19T17:35-08:00"
-        return self.dateFromString(dateString)
-    }
-    
 }

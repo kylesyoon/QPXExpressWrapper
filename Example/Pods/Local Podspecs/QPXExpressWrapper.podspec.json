@@ -9,11 +9,16 @@
     "Kyle Yoon": "apps.yoon@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/QPXExpressWrapper.git",
+    "git": "https://github.com/yoonapps/QPXExpressWrapper.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "QPXExpressWrapper/Classes/**/*"
+  "source_files": "QPXExpressWrapper/Classes/**/*",
+  "dependencies": {
+    "Gloss": [
+      "~> 1.2"
+    ]
+  }
 }

@@ -7,34 +7,23 @@
 //
 
 import Foundation
+import Gloss
 
-public struct TripsDataAirport {
+public struct TripsDataAirport: Decodable {
     
-    public let kind: String
-    public let code: String
-    public let city: String
-    public let name: String
+    public let kind: String?
+    public let code: String?
+    public let city: String?
+    public let name: String?
     
-    init(kind: String, code: String, city: String, name: String) {
-        self.kind = kind
-        self.code = code
-        self.city = city
-        self.name = name
-    }
-    
-    //TODO: decode
-    static func decode(jsonDict: [String: AnyObject]) -> TripsDataAirport? {
-        if let kind = jsonDict["kind"] as? String,
-            code = jsonDict["code"] as? String,
-            city = jsonDict["city"] as? String,
-            name = jsonDict["name"] as? String {
-                return TripsDataAirport(kind: kind,
-                    code: code, 
-                    city: city, 
-                    name: name)
+    public init?(json: JSON) {
+        guard let kind: String = "kind" <~~ json else {
+            return nil
         }
-        
-        return nil
+        self.kind = kind
+        self.code = "code" <~~ json
+        self.city = "city" <~~ json
+        self.name = "name" <~~ json
     }
     
 }

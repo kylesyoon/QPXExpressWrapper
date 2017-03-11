@@ -7,24 +7,16 @@
 //
 
 import Foundation
+import Gloss
 
-public struct TripOptionSliceSegmentFlight {
+public struct TripOptionSliceSegmentFlight: Decodable {
     
-    public let carrier: String
-    public let number: String
+    public let carrier: String?
+    public let number: String?
     
-    init(number: String, carrier: String) {
-        self.number = number
-        self.carrier = carrier
-    }
-    
-    static func decode(jsonDict: [String: AnyObject]) -> TripOptionSliceSegmentFlight? {
-        if let number = jsonDict["number"] as? String,
-            carrier = jsonDict["carrier"] as? String {
-            return TripOptionSliceSegmentFlight(number: number, carrier: carrier)
-        }
-        
-        return nil
+    public init?(json: JSON) {
+        self.number = "number" <~~ json
+        self.carrier = "carrier" <~~ json
     }
     
 }

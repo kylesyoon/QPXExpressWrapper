@@ -7,15 +7,16 @@
 //
 
 import Foundation
+import Gloss
 
-public struct TripRequestPassengers {
+public struct TripRequestPassengers: Decodable, Encodable {
     
     public let kind: String = "qpxexpress#passengerCounts"
-    public var adultCount: Int = 1
-    public let childCount: Int?
-    public let infantInLapCount: Int?
-    public let infantInSeatCount: Int?
-    public let seniorCount: Int?
+    public var adultCount: Int
+    public var childCount: Int?
+    public var infantInLapCount: Int?
+    public var infantInSeatCount: Int?
+    public var seniorCount: Int?
     
     public init(adultCount: Int,
                 childCount: Int?,
@@ -29,50 +30,26 @@ public struct TripRequestPassengers {
         self.seniorCount = seniorCount
     }
     
-    func jsonDict() -> [String: AnyObject] {
-        var jsonDict = ["kind": self.kind, "adultCount": self.adultCount].mutableCopy() as! [String: AnyObject]
-        if let childCount = self.childCount {
-            jsonDict["childCount"] = childCount
+    public init?(json: JSON) {
+        guard let adultCount: Int = "adultCount" <~~ json else {
+            return nil
         }
-        if let infantInLapCount = self.infantInLapCount {
-            jsonDict["infantInLapCount"] = infantInLapCount
-        }
-        if let infantInSeatCount = self.infantInSeatCount {
-            jsonDict["infantInSeatCount"] = infantInSeatCount
-        }
-        if let seniorCount = self.seniorCount {
-            jsonDict["seniorCount"] = seniorCount
-        }
-        return jsonDict
+        self.adultCount = adultCount
+        self.childCount = "childCount" <~~ json
+        self.infantInLapCount = "infantInLapCount" <~~ json
+        self.infantInSeatCount = "infantInSeatCount" <~~ json
+        self.seniorCount = "seniorCount" <~~ json
     }
     
-    static func decode(jsonDict: [String: AnyObject]) -> TripRequestPassengers? {
-        var adultCount: Int = 0
-        if let decodedAdultCount = jsonDict["adultCount"] as? Int {
-            adultCount = decodedAdultCount
-        }
-        var childCount: Int?
-        if let decodedChildCount = jsonDict["childCount"] as? Int {
-            childCount = decodedChildCount
-        }
-        var infantInLapCount: Int?
-        if let decodedInfantInLapCount = jsonDict["infantInLapCount"] as? Int {
-            infantInLapCount = decodedInfantInLapCount
-        }
-        var infantInSeatCount: Int?
-        if let decodedInfantInSeatCount = jsonDict["infantInSeatCount"] as? Int {
-            infantInSeatCount = decodedInfantInSeatCount
-        }
-        var seniorCount: Int?
-        if let decodedSeniorCount = jsonDict["seniorCount"] as? Int {
-            seniorCount = decodedSeniorCount
-        }
-        
-        return TripRequestPassengers(adultCount: adultCount,
-            childCount: childCount,
-            infantInLapCount: infantInLapCount, 
-            infantInSeatCount: infantInSeatCount,
-            seniorCount: seniorCount)
+    public func toJSON() -> JSON? {
+        return jsonify([
+            "kind" ~~> self.kind,
+            "adultCount" ~~> self.adultCount,
+            "childCount" ~~> self.childCount,
+            "infantInLapCount" ~~> self.infantInLapCount,
+            "infantInSeatCount" ~~> self.infantInSeatCount,
+            "seniorCount" ~~> self.seniorCount
+            ])
     }
     
 }

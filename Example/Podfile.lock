@@ -1,5 +1,7 @@
 PODS:
-  - QPXExpressWrapper (0.1.0)
+  - Gloss (1.2.1)
+  - QPXExpressWrapper (0.1.0):
+    - Gloss (~> 1.2)
 
 DEPENDENCIES:
   - QPXExpressWrapper (from `../`)
@@ -9,8 +11,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  QPXExpressWrapper: 8ce8efea908f2b7e5c269edfbc86c6004c96812a
+  Gloss: 9ab33b8ede01e4232571d43a6bf9259b85d1de69
+  QPXExpressWrapper: 605547b46e93854c4b93f0a3e7d7aec51263c845
 
 PODFILE CHECKSUM: d6d098636f8fca63a2747cea646566f37b58f230
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.2.0

@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import Foundation
 import QPXExpressWrapper
 
 class SearchViewController: UIViewController {
 
-    let yourAPIKey = "[YOUR API KEY]"
+    let yourAPIKey = "AIzaSyA0FTpJ-ZvQzZJsBBVARlUXNYFiaYM-tS4"
     let searchURLString = "https://www.googleapis.com/qpxExpress/v1/trips/search"
     
     @IBOutlet var roundTripSegmentedControl: UISegmentedControl!
@@ -22,29 +23,29 @@ class SearchViewController: UIViewController {
     @IBOutlet var adultCountStepper: UIStepper!
     @IBOutlet var adultCountLabel: UILabel!
     
-    var departureDate: NSDate?
-    var returnDate: NSDate?
-    lazy var dateFormatter = NSDateFormatter()
+    var departureDate: Date?
+    var returnDate: Date?
+    lazy var dateFormatter = DateFormatter()
     var adultCount = 1
     var isRoundTrip = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.returnDateButton.hidden = true
+        self.returnDateButton.isHidden = true
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == DateViewController.departureDateSegueIdentifier || segue.identifier == DateViewController.returnDateSegueIdentifier {
-            if let datePopoverNavController = segue.destinationViewController as? UINavigationController {
+            if let datePopoverNavController = segue.destination as? UINavigationController {
                 if let dateViewController = datePopoverNavController.viewControllers.first as? DateViewController {
                     // Let VC know whether we tapped button for departure or return date
                     dateViewController.isDeparture = segue.identifier == DateViewController.departureDateSegueIdentifier
                     dateViewController.delegate = self
                 }
-                datePopoverNavController.preferredContentSize = CGSizeMake(CGRectGetWidth(self.view.frame), self.view.frame.size.height / 4)
+                datePopoverNavController.preferredContentSize = CGSize(width: self.view.frame.width, height: self.view.frame.size.height / 4)
                 if let datePresentationController = datePopoverNavController.popoverPresentationController {
                     datePresentationController.delegate = self
-                    datePresentationController.permittedArrowDirections = UIPopoverArrowDirection.Up
+                    datePresentationController.permittedArrowDirections = UIPopoverArrowDirection.up
                     if let dateButton = sender as? UIButton {
                         datePresentationController.sourceRect = dateButton.frame
                         datePresentationController.sourceView = dateButton
@@ -54,37 +55,23 @@ class SearchViewController: UIViewController {
         }
     }
     
-    private func tripRequest() -> TripRequest? {
+    fileprivate func tripRequest() -> TripRequest? {
         guard let origin = self.originTextField.text,
-            destination = self.destinationTextField.text,
-            departureDate = self.departureDate else {
+            let destination = self.destinationTextField.text,
+            let departureDate = self.departureDate else {
                 // Show error for incomplete fields
                 return nil
         }
         
-        let departureTripSlice = TripRequestSlice(origin: origin,
+        let departureTripSlice = TripRequestSlice(origin: origin, 
                                                   destination: destination,
-                                                  date: departureDate,
-                                                  maxStops: nil,
-                                                  maxConnectionDuration: nil,
-                                                  preferredCabin: nil,
-                                                  permittedDepartureTime: nil,
-                                                  permittedCarrier: nil,
-                                                  alliance: nil,
-                                                  prohibitedCarrier: nil)
+                                                  date: departureDate)
         var requestTripSlices = [departureTripSlice]
         
-        if let returnDate = self.returnDate where isRoundTrip {
+        if let returnDate = self.returnDate, isRoundTrip {
             let returnTripSlice = TripRequestSlice(origin: destination,
                                                    destination: origin,
-                                                   date: returnDate, 
-                                                   maxStops: nil, 
-                                                   maxConnectionDuration: nil, 
-                                                   preferredCabin: nil, 
-                                                   permittedDepartureTime: nil, 
-                                                   permittedCarrier: nil, 
-                                                   alliance: nil, 
-                                                   prohibitedCarrier: nil)
+                                                   date: returnDate)
             requestTripSlices.append(returnTripSlice)
         }
         
@@ -102,31 +89,33 @@ class SearchViewController: UIViewController {
                            solutions: nil)
     }
     
-    private func query() {
-        guard let tripRequest = self.tripRequest(),
-            searchURLComponents = NSURLComponents(string: self.searchURLString) else {
+    fileprivate func query() {
+        guard
+            let tripRequest = self.tripRequest(),
+            var searchURLComponents = URLComponents(string: self.searchURLString) else {
             return
         }
         
-        let keyQueryItem = NSURLQueryItem(name: "key", value: self.yourAPIKey)
+        let keyQueryItem = URLQueryItem(name: "key", value: self.yourAPIKey)
         searchURLComponents.queryItems = [keyQueryItem]
         
-        guard let searchURL = searchURLComponents.URL else {
+        guard let searchURL = searchURLComponents.url else {
             return
         }
         
-        let request = NSMutableURLRequest(URL: searchURL)
-        request.HTTPMethod = "POST"
+        var request = URLRequest(url: searchURL)
+        request.httpMethod = "POST"
         
-        let requestBody = tripRequest.jsonDict()
-        guard let json = try? NSJSONSerialization.dataWithJSONObject(requestBody, options: .PrettyPrinted) else {
+        guard
+            let requestBody = tripRequest.toJSON(),
+            let json = try? JSONSerialization.data(withJSONObject: requestBody, options: .prettyPrinted) else {
             return
         }
-        request.HTTPBody = json
+        request.httpBody = json
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) {
+        let task = URLSession.shared.dataTask(with: request) {
             data, response, error in
             guard let data = data else {
                 print("No data")
@@ -134,10 +123,10 @@ class SearchViewController: UIViewController {
             }
             
             do {
-                guard let jsonDict = try NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) as? [String: AnyObject] else {
+                guard let jsonDict = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: AnyObject] else {
                     return
                 }
-                guard let searchResults = SearchResults.decode(jsonDict) else {
+                guard let searchResults = SearchResults(json: jsonDict) else {
                     print("Not a SearchResults JSON dictionary")
                     return
                 }
@@ -151,16 +140,16 @@ class SearchViewController: UIViewController {
         task.resume()
     }
     
-    @IBAction func valueDidChangeForAdultCountStepper(stepper: UIStepper) {
+    @IBAction func valueDidChangeForAdultCountStepper(_ stepper: UIStepper) {
         self.adultCountLabel.text = "Adults: \(Int(stepper.value))"
         self.adultCount = Int(stepper.value)
     }
     
-    @IBAction func valueDidChangeForSegmentedControl(control: UISegmentedControl) {
-        self.returnDateButton.hidden = control.selectedSegmentIndex == 0
+    @IBAction func valueDidChangeForSegmentedControl(_ control: UISegmentedControl) {
+        self.returnDateButton.isHidden = control.selectedSegmentIndex == 0
     }
     
-    @IBAction func didTapSearchButton(sender: AnyObject) {
+    @IBAction func didTapSearchButton(_ sender: AnyObject) {
         self.query()
     }
 
@@ -168,26 +157,26 @@ class SearchViewController: UIViewController {
 
 extension SearchViewController: DateViewControllerDelegate {
     
-    func dateViewController(dateViewController: DateViewController, didTapDoneWithDate date: NSDate) {
+    func dateViewController(_ dateViewController: DateViewController, didTapDoneWithDate date: Date) {
         if dateViewController.isDeparture {
             self.departureDate = date
-            self.departureDateButton.setTitle(self.dateFormatter.presentableDate(fromDate: date), forState: .Normal)
+            self.departureDateButton.setTitle(self.dateFormatter.presentableDate(fromDate: date), for: UIControlState())
             // If the user selects a date later than the return date they've specified, then clear return date
             if let returnDate = self.returnDate {
-                if  date.compare(returnDate) == .OrderedDescending {
+                if  date.compare(returnDate) == .orderedDescending {
                     self.returnDate = nil
-                    self.returnDateButton.setTitle(NSLocalizedString("Return Date", comment: "Return Date"), forState: .Normal)
+                    self.returnDateButton.setTitle(NSLocalizedString("Return Date", comment: "Return Date"), for: UIControlState())
                 }
             }
         } else {
             self.returnDate = date
-            self.returnDateButton.setTitle(self.dateFormatter.presentableDate(fromDate: date), forState: .Normal)
+            self.returnDateButton.setTitle(self.dateFormatter.presentableDate(fromDate: date), for: UIControlState())
             // If the user selects a date earlier than the departure date they've specified, then clear departure date
             if let departureDate = self.departureDate {
-                if date.compare(departureDate) == .OrderedAscending {
+                if date.compare(departureDate) == .orderedAscending {
                     // If the return date is earlier than the departure date, do nothing.
                     self.departureDate = nil
-                    self.departureDateButton.setTitle(NSLocalizedString("Departure Date", comment: "Departure Date"), forState: .Normal)
+                    self.departureDateButton.setTitle(NSLocalizedString("Departure Date", comment: "Departure Date"), for: UIControlState())
                 }
             }
         }
@@ -197,24 +186,24 @@ extension SearchViewController: DateViewControllerDelegate {
 
 extension SearchViewController: UIPopoverPresentationControllerDelegate {
     
-    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
-        return .None
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
     }
     
 }
 
-extension NSDateFormatter {
+extension DateFormatter {
     
-    func presentableDate(fromDate date: NSDate) -> String {
+    func presentableDate(fromDate date: Date) -> String {
         self.dateFormat = "MMM'.' dd',' yy"
-        return self.stringFromDate(date)
+        return self.string(from: date)
     }
     
-    func presentableTime(fromDate date: NSDate) -> String {
-        let usTwelveHourLocale = NSLocale(localeIdentifier: "en_US_POSIX")
+    func presentableTime(fromDate date: Date) -> String {
+        let usTwelveHourLocale = Locale(identifier: "en_US_POSIX")
         self.locale = usTwelveHourLocale // Investigate what this locale does
         self.dateFormat = "hh':'mm a"
-        return self.stringFromDate(date)
+        return self.string(from: date)
     }
     
 }

@@ -7,49 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A9B1A9A50FE7F0741239CDCC0FE1198 /* TripOptionSliceSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFDCB7D19098DBE053E22F0476FB57 /* TripOptionSliceSegment.swift */; };
-		0E874B3BDDE90157F9D237445BE395A6 /* TripRequestPassengers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35600F142B3CDF883028DAA6C264C0DA /* TripRequestPassengers.swift */; };
-		106359B7140E68CD96CD1FB4E3E9CD53 /* TripsDataTax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11727C3BFBDD0F4E11B2162F47D98435 /* TripsDataTax.swift */; };
-		11707596C1EB08A3327F733722D5C1CD /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9204011153815E28ED37DA40761E54 /* SearchResults.swift */; };
-		351E4C2805705ED25EB2992003769251 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		3F49ED0513958D678962DACC226E84C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		487CF3FE6E9D4CB436E00E081E00F991 /* TripsDataCarrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B253C4F8AF2315BC54C068CAB389EA /* TripsDataCarrier.swift */; };
-		517C833FCFC49340476377788A6231E9 /* TripRequestSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0897486C2744DF19E26E321C42D2F0A /* TripRequestSlice.swift */; };
-		51F8741ECDD2E9EF7671A4B9C4707CBF /* TripOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B145CD36FF97BBDD46CC16423E1AC /* TripOption.swift */; };
-		5CB940268C448618C44CAAC5ED5CB39B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		63181D85C7721FBCCC2BC69995C4D170 /* TripsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A7AEFAA2AE84501357A9C5E2E6AC81 /* TripsData.swift */; };
-		66B0BC99547816E3A3604BB9C718904D /* TripOptionSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE9DE6449C9C90AB1774A1BB0B221B /* TripOptionSlice.swift */; };
-		79A42018B17B3500C33BA39422C9326A /* TripOptionPricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536B8093E47E9E73B0F8E80A42891DB /* TripOptionPricing.swift */; };
-		7DD579DCD30FE8E422BEA735C7FFFF05 /* TripOptionSliceSegmentLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0C8AADD218B5070CADDCEE71C16475 /* TripOptionSliceSegmentLeg.swift */; };
-		82F86FB2115673E1A44C341FF8F666C5 /* Pods-QPXExpressWrapper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F84798E5CBB07EB32F473DDE527D7 /* Pods-QPXExpressWrapper_Tests-dummy.m */; };
-		90CAB3B15285D03EDE5619016C6DAED4 /* TripRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE56FCB73D5CC610759B79A4D9DC2247 /* TripRequest.swift */; };
-		9F4A099D1B60649DC4E0123848C8CEEC /* TripOptionSliceSegmentFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C2449C2241EE52B88084FEE95A57E /* TripOptionSliceSegmentFlight.swift */; };
-		A0635E358766BE088B3BA242745D8E08 /* TripsDataAircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1FF964180C001D3C55D74761A9348 /* TripsDataAircraft.swift */; };
-		A3F81C9E2E416D5285E2EEB9F1B2B43A /* Pods-QPXExpressWrapper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C1EB7E857F4729C7F1AE2A4C645621 /* Pods-QPXExpressWrapper_Example-dummy.m */; };
-		B28ADE4A6C2CEA568038DB7C9AA99672 /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CA33F74B4F07B838EA6A0293646CC4 /* Trips.swift */; };
-		B5ECACE64A94D9FCC82EFB6D818B8599 /* TripsDataCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F05162CAE1EA57497F6DCD26102F4 /* TripsDataCity.swift */; };
-		C08566A208216EE184FD208F1DAFB7D7 /* TripOptionPricingFare.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC74D3348BA7D84B81607CE4A1C05C /* TripOptionPricingFare.swift */; };
-		C75ADCDC2A7FDF638B46A22BD2AAC163 /* TripOptionPricingTax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3176E6195CA6FA79E0EF042EAFC36E49 /* TripOptionPricingTax.swift */; };
-		C84AFE979BB8514A51A7F985B8DFBFAE /* QPXExpressWrapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 718A7AF64A475208F1CAED7C406B207E /* QPXExpressWrapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E69F173717E243D9009609A8CCA335E1 /* TripOptionPricingSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3051BF6FA8E854426193FED55E4E697 /* TripOptionPricingSegment.swift */; };
-		F0B883FD7170914F1969BDA7438531C4 /* QPXExpressWrapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A09ED20A48DF0F72AC9D7B209E6B4 /* QPXExpressWrapper-dummy.m */; };
-		F4835104740817980332B0643408D481 /* TripsDataAirport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E116CDB94029719367F9E1BFC78368 /* TripsDataAirport.swift */; };
-		F817656D55AFDCC44D8D601C30165EBE /* Pods-QPXExpressWrapper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B5711E318019C6ED9F6FF705B5DCEB0 /* Pods-QPXExpressWrapper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8B1E85635C87CC5C96D785DC7348ED0 /* Pods-QPXExpressWrapper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA5FDF9E409D23075B48B67A566B12B1 /* Pods-QPXExpressWrapper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0396FA6D6DA991AC06C4D9F6D9BB0A9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156AEF095183636DA9FC902307257DBB /* Foundation.framework */; };
+		04F327A8CD10917CA00AFE573073955E /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9204011153815E28ED37DA40761E54 /* SearchResults.swift */; };
+		11373F4E4D3BAD381172D4F4D8554DAD /* TripOptionSliceSegmentFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5C2449C2241EE52B88084FEE95A57E /* TripOptionSliceSegmentFlight.swift */; };
+		1179BD609B10D0588D6C9805637BC13F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156AEF095183636DA9FC902307257DBB /* Foundation.framework */; };
+		18EF97EDB794F63C2493B3A20A0E6275 /* Gloss.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF4F96AA3114F9F2F30C3D7D3165550 /* Gloss.framework */; };
+		1B82F27AD316E53587BA41AEF4BC89A6 /* TripOptionPricingFare.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC74D3348BA7D84B81607CE4A1C05C /* TripOptionPricingFare.swift */; };
+		3DFB2594AB07D30B88798FE9BA0D7273 /* TripRequestSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0897486C2744DF19E26E321C42D2F0A /* TripRequestSlice.swift */; };
+		52097A4ED01B629509F35B46A659EC0A /* TripsDataAirport.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E116CDB94029719367F9E1BFC78368 /* TripsDataAirport.swift */; };
+		60EF2B4A841620E7F6E237712878CAE1 /* Gloss.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEBE88DA47DB8CF7D74A3C46F5F9861 /* Gloss.swift */; };
+		6282B5C2F801362D0A31C5F0B9E3D9DD /* TripOptionPricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536B8093E47E9E73B0F8E80A42891DB /* TripOptionPricing.swift */; };
+		69E94F05CB65FD3FF69D61C5BC05BCA1 /* QPXExpressWrapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 718A7AF64A475208F1CAED7C406B207E /* QPXExpressWrapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AA5B075BE42501A70BB653EB0DF74F2 /* Pods-QPXExpressWrapper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B5711E318019C6ED9F6FF705B5DCEB0 /* Pods-QPXExpressWrapper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7018260473A9CC281797DFFB30BE6EE3 /* TripsDataTax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11727C3BFBDD0F4E11B2162F47D98435 /* TripsDataTax.swift */; };
+		7650507B22473E04F0E7E9949D7EC82F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156AEF095183636DA9FC902307257DBB /* Foundation.framework */; };
+		89007A2B2ECE9120FFEEA9DEDADA2081 /* TripRequestPassengers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35600F142B3CDF883028DAA6C264C0DA /* TripRequestPassengers.swift */; };
+		895EAFE858CBEE2AA669120FEB985370 /* TripRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE56FCB73D5CC610759B79A4D9DC2247 /* TripRequest.swift */; };
+		8EA6F1B707F71BFE783EEC9147B70C84 /* Pods-QPXExpressWrapper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C1EB7E857F4729C7F1AE2A4C645621 /* Pods-QPXExpressWrapper_Example-dummy.m */; };
+		92B9E625D4AF623494BA780EFD471EA8 /* TripOptionPricingTax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3176E6195CA6FA79E0EF042EAFC36E49 /* TripOptionPricingTax.swift */; };
+		9D148F801A5DA5B3C5C89D2300B72CEA /* Trips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CA33F74B4F07B838EA6A0293646CC4 /* Trips.swift */; };
+		A2C63A249974FBEA24DF5425542629D5 /* TripOptionSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BE9DE6449C9C90AB1774A1BB0B221B /* TripOptionSlice.swift */; };
+		B2E588A8CFBB7C21A9ABD1BBED44608A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 156AEF095183636DA9FC902307257DBB /* Foundation.framework */; };
+		B3142FEE8E452C147C2457B4B6E5BE87 /* Pods-QPXExpressWrapper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 740F84798E5CBB07EB32F473DDE527D7 /* Pods-QPXExpressWrapper_Tests-dummy.m */; };
+		B45B6C52FC0A78BF2A3BC13B3F859621 /* TripOptionPricingSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3051BF6FA8E854426193FED55E4E697 /* TripOptionPricingSegment.swift */; };
+		B65254CFFCCBD0E7B8108C1EE4039DDB /* TripOptionSliceSegmentLeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0C8AADD218B5070CADDCEE71C16475 /* TripOptionSliceSegmentLeg.swift */; };
+		BBD659939C386600388DFBFABAE7F8CD /* TripsDataAircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D1FF964180C001D3C55D74761A9348 /* TripsDataAircraft.swift */; };
+		C46D59AB69CD21909313C80F8D7B8364 /* QPXExpressWrapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B98A09ED20A48DF0F72AC9D7B209E6B4 /* QPXExpressWrapper-dummy.m */; };
+		C6D26105FF92C2491FCC2144BA340A19 /* TripsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A7AEFAA2AE84501357A9C5E2E6AC81 /* TripsData.swift */; };
+		CA3DD0BBA10012C102290B35C704D3CB /* Gloss-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88157DEC78A26DBF9861C98519004CE5 /* Gloss-dummy.m */; };
+		CDBD3770E5C2C44CC9A8BBD65F66688F /* Pods-QPXExpressWrapper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA5FDF9E409D23075B48B67A566B12B1 /* Pods-QPXExpressWrapper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D28BA02F32D1302B107CC408FA8BB049 /* TripOptionSliceSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFDCB7D19098DBE053E22F0476FB57 /* TripOptionSliceSegment.swift */; };
+		D3B1766D93EFC0E7736AE2CFD49D24C4 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10DE9CC482224224CF94FE4FB4624B9 /* Encoder.swift */; };
+		E8158058535EF4CEFBB2D1219B6B7AA5 /* TripsDataCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053F05162CAE1EA57497F6DCD26102F4 /* TripsDataCity.swift */; };
+		ED12D398062DEA84AEEBD008387AA814 /* TripsDataCarrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B253C4F8AF2315BC54C068CAB389EA /* TripsDataCarrier.swift */; };
+		EE33386073ACE146615C9C291C584D73 /* ExtensionDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6868C4B106F0FEEFB5D2965D580614D /* ExtensionDictionary.swift */; };
+		F7BA99394ED391BC9CC0208DD1E94921 /* Gloss-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A924D9619D7AF04E365BE3D2E22F415 /* Gloss-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7DD87D17D2BEFF0D9C2348D543D49F5 /* ExtensionDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852C0024C6E82FC24CDCBACB35A8EF75 /* ExtensionDecodable.swift */; };
+		F80406EE93B3CE23B4CF98944E934733 /* TripOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4B145CD36FF97BBDD46CC16423E1AC /* TripOption.swift */; };
+		F8D81F377A1DF244782222DCB241CAEB /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D662DAB98659018824DD70A1216105 /* Decoder.swift */; };
+		FAEFA9371AA5A7F4C499C5519E279C27 /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2591A067136371451F2FDE8D8F9B6DE /* ExtensionArray.swift */; };
+		FBA873D017F99AC56947CCEF31641139 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D35554B04485072F244CE2FF0345D4B /* Operators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E277E42BC233D62AF97B7D4B6FE456FA /* PBXContainerItemProxy */ = {
+		3260A61CC2C4676E2479171BC5BCE5E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 437A9EEC384EDCE6D39FA70A8F546805;
+			remoteGlobalIDString = 40E7477AD67135868F5FB08136602674;
+			remoteInfo = Gloss;
+		};
+		542AE6522524B7D731DE769FEDC2BEAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 502E2353D4D1F2FF7F6B179477D3C2D9;
 			remoteInfo = QPXExpressWrapper;
+		};
+		66F764EBF808D2BED98A12249DDCB8E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40E7477AD67135868F5FB08136602674;
+			remoteInfo = Gloss;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		052DA27656F423DBCFA14F984B9B740D /* QPXExpressWrapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = QPXExpressWrapper.modulemap; sourceTree = "<group>"; };
+		0229F61D1BB1622D0A256F1BA1BFE0AA /* QPXExpressWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = QPXExpressWrapper.framework; path = QPXExpressWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		052DA27656F423DBCFA14F984B9B740D /* QPXExpressWrapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = QPXExpressWrapper.modulemap; sourceTree = "<group>"; };
 		053F05162CAE1EA57497F6DCD26102F4 /* TripsDataCity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsDataCity.swift; sourceTree = "<group>"; };
 		069140AC858A3BD4AF9093E18C157CE1 /* Pods-QPXExpressWrapper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QPXExpressWrapper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		08CA3B70366035459BCD63E485191E57 /* Pods-QPXExpressWrapper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QPXExpressWrapper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -57,95 +83,109 @@
 		09BE9DE6449C9C90AB1774A1BB0B221B /* TripOptionSlice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionSlice.swift; sourceTree = "<group>"; };
 		0A06A79B80DB8624323B92264C7E2B85 /* Pods-QPXExpressWrapper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QPXExpressWrapper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		11727C3BFBDD0F4E11B2162F47D98435 /* TripsDataTax.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsDataTax.swift; sourceTree = "<group>"; };
+		156AEF095183636DA9FC902307257DBB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		19DFA9018A699E04ABD944CAFF207914 /* Pods-QPXExpressWrapper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QPXExpressWrapper_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2A924D9619D7AF04E365BE3D2E22F415 /* Gloss-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-umbrella.h"; sourceTree = "<group>"; };
 		312D11F3D744753AD9AE1655411C7DDD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3176E6195CA6FA79E0EF042EAFC36E49 /* TripOptionPricingTax.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionPricingTax.swift; sourceTree = "<group>"; };
 		31C0E660B21F02986EC075364DB34E9D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3326C6542656DE8DB0A15EF3A99046A2 /* Pods_QPXExpressWrapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QPXExpressWrapper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35600F142B3CDF883028DAA6C264C0DA /* TripRequestPassengers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripRequestPassengers.swift; sourceTree = "<group>"; };
-		4312F4CEA2B6C56B8E0AB959F5B8D5AB /* QPXExpressWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QPXExpressWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D35554B04485072F244CE2FF0345D4B /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
 		52A0FF6EF8D133DD2847D637623BCE48 /* Pods-QPXExpressWrapper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QPXExpressWrapper_Example-frameworks.sh"; sourceTree = "<group>"; };
+		5863F3035FF00FC7163BA77F3CB20721 /* Gloss.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Gloss.xcconfig; sourceTree = "<group>"; };
 		6B5711E318019C6ED9F6FF705B5DCEB0 /* Pods-QPXExpressWrapper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QPXExpressWrapper_Example-umbrella.h"; sourceTree = "<group>"; };
 		718A7AF64A475208F1CAED7C406B207E /* QPXExpressWrapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QPXExpressWrapper-umbrella.h"; sourceTree = "<group>"; };
 		740F84798E5CBB07EB32F473DDE527D7 /* Pods-QPXExpressWrapper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QPXExpressWrapper_Tests-dummy.m"; sourceTree = "<group>"; };
+		76F2EB5D948B69E782128F7F8CD0A0CE /* Gloss-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Gloss-prefix.pch"; sourceTree = "<group>"; };
 		77CA33F74B4F07B838EA6A0293646CC4 /* Trips.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Trips.swift; sourceTree = "<group>"; };
 		7A5C2449C2241EE52B88084FEE95A57E /* TripOptionSliceSegmentFlight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionSliceSegmentFlight.swift; sourceTree = "<group>"; };
 		7CBAD5F2828885B96853628A3F15D165 /* QPXExpressWrapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QPXExpressWrapper-prefix.pch"; sourceTree = "<group>"; };
-		7FB4135269DC99FDEB224C843CE7DF55 /* Pods_QPXExpressWrapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QPXExpressWrapper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8244AD3DC959C12E2CCF94457FB4F52C /* Pods-QPXExpressWrapper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QPXExpressWrapper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		852C0024C6E82FC24CDCBACB35A8EF75 /* ExtensionDecodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionDecodable.swift; path = Sources/ExtensionDecodable.swift; sourceTree = "<group>"; };
+		88157DEC78A26DBF9861C98519004CE5 /* Gloss-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Gloss-dummy.m"; sourceTree = "<group>"; };
 		88DFDCB7D19098DBE053E22F0476FB57 /* TripOptionSliceSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionSliceSegment.swift; sourceTree = "<group>"; };
 		8A30C8E95FBA08DB7790641211D10B5B /* Pods-QPXExpressWrapper_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QPXExpressWrapper_Example-resources.sh"; sourceTree = "<group>"; };
+		8B0B8A6DF72DB2E28D44B711CE46FDD0 /* Gloss.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Gloss.modulemap; sourceTree = "<group>"; };
 		8E0C8AADD218B5070CADDCEE71C16475 /* TripOptionSliceSegmentLeg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionSliceSegmentLeg.swift; sourceTree = "<group>"; };
 		901789C08B7FA0ED807F315E16D9EF76 /* Pods-QPXExpressWrapper_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QPXExpressWrapper_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94F42DD843F1499F593CB37A64BCBBAC /* Pods-QPXExpressWrapper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QPXExpressWrapper_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9FF4F96AA3114F9F2F30C3D7D3165550 /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10DE9CC482224224CF94FE4FB4624B9 /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Sources/Encoder.swift; sourceTree = "<group>"; };
 		A8A7AEFAA2AE84501357A9C5E2E6AC81 /* TripsData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsData.swift; sourceTree = "<group>"; };
 		B1C1EB7E857F4729C7F1AE2A4C645621 /* Pods-QPXExpressWrapper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QPXExpressWrapper_Example-dummy.m"; sourceTree = "<group>"; };
+		B2591A067136371451F2FDE8D8F9B6DE /* ExtensionArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionArray.swift; path = Sources/ExtensionArray.swift; sourceTree = "<group>"; };
+		B2D662DAB98659018824DD70A1216105 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/Decoder.swift; sourceTree = "<group>"; };
+		B3ABBF051270844EA2E3A1EFBDB2B6CC /* Pods_QPXExpressWrapper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QPXExpressWrapper_Tests.framework; path = "Pods-QPXExpressWrapper_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B536B8093E47E9E73B0F8E80A42891DB /* TripOptionPricing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionPricing.swift; sourceTree = "<group>"; };
 		B6C7AD8E96E51CB1BC664CE3E3B57F8F /* QPXExpressWrapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QPXExpressWrapper.xcconfig; sourceTree = "<group>"; };
 		B7E116CDB94029719367F9E1BFC78368 /* TripsDataAirport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsDataAirport.swift; sourceTree = "<group>"; };
+		B84FF17F316BA04F42811AFCCE78489D /* Pods_QPXExpressWrapper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QPXExpressWrapper_Example.framework; path = "Pods-QPXExpressWrapper_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98A09ED20A48DF0F72AC9D7B209E6B4 /* QPXExpressWrapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QPXExpressWrapper-dummy.m"; sourceTree = "<group>"; };
 		BB9204011153815E28ED37DA40761E54 /* SearchResults.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
+		C1358661C585EF9C2CED2D3C0E0A8CCB /* Gloss.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gloss.framework; path = Gloss.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B893E0B612E6B3103464E368E848CE /* Pods-QPXExpressWrapper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QPXExpressWrapper_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C6F0BCBC8C25CF35A42B058F03DF9050 /* Pods-QPXExpressWrapper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QPXExpressWrapper_Example.modulemap"; sourceTree = "<group>"; };
+		C6F0BCBC8C25CF35A42B058F03DF9050 /* Pods-QPXExpressWrapper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QPXExpressWrapper_Example.modulemap"; sourceTree = "<group>"; };
 		CE56FCB73D5CC610759B79A4D9DC2247 /* TripRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripRequest.swift; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CF772A59C940DFD8744E19E9B8C8E8C7 /* Pods-QPXExpressWrapper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QPXExpressWrapper_Tests.modulemap"; sourceTree = "<group>"; };
+		CF772A59C940DFD8744E19E9B8C8E8C7 /* Pods-QPXExpressWrapper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QPXExpressWrapper_Tests.modulemap"; sourceTree = "<group>"; };
+		D6868C4B106F0FEEFB5D2965D580614D /* ExtensionDictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionDictionary.swift; path = Sources/ExtensionDictionary.swift; sourceTree = "<group>"; };
 		D9D1FF964180C001D3C55D74761A9348 /* TripsDataAircraft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripsDataAircraft.swift; sourceTree = "<group>"; };
 		DACC9B4A959C4C901CCD91F202AA6F80 /* Pods-QPXExpressWrapper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QPXExpressWrapper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		DB4B145CD36FF97BBDD46CC16423E1AC /* TripOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOption.swift; sourceTree = "<group>"; };
+		DC74EBAF3471B6DD6B1BE4A8C7EBDF7B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E918E0E5A411433AC5EAC38A4FF16A81 /* Pods-QPXExpressWrapper_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QPXExpressWrapper_Tests-resources.sh"; sourceTree = "<group>"; };
 		F0897486C2744DF19E26E321C42D2F0A /* TripRequestSlice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripRequestSlice.swift; sourceTree = "<group>"; };
 		F3051BF6FA8E854426193FED55E4E697 /* TripOptionPricingSegment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionPricingSegment.swift; sourceTree = "<group>"; };
 		F4BC74D3348BA7D84B81607CE4A1C05C /* TripOptionPricingFare.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TripOptionPricingFare.swift; sourceTree = "<group>"; };
 		F4E7ECC8B53622AF26136962B4538769 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA5FDF9E409D23075B48B67A566B12B1 /* Pods-QPXExpressWrapper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QPXExpressWrapper_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FFEBE88DA47DB8CF7D74A3C46F5F9861 /* Gloss.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Gloss.swift; path = Sources/Gloss.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		44C1A6BEAC55952AF38EA642201E4FFF /* Frameworks */ = {
+		0A0C57D85F4ABF8837FEEB5D043FFC02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CB940268C448618C44CAAC5ED5CB39B /* Foundation.framework in Frameworks */,
+				1179BD609B10D0588D6C9805637BC13F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B8DDF64419AD9AB12C3B77F9319524BF /* Frameworks */ = {
+		32232D93637C5674D0BA5402EBBC3AE8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				351E4C2805705ED25EB2992003769251 /* Foundation.framework in Frameworks */,
+				B2E588A8CFBB7C21A9ABD1BBED44608A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF8797D84B71107194818782B51A47EF /* Frameworks */ = {
+		5C0A84C291F44273F9D5A1ECB39B73B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F49ED0513958D678962DACC226E84C6 /* Foundation.framework in Frameworks */,
+				0396FA6D6DA991AC06C4D9F6D9BB0A9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6924E72DF59FC729E86B73ABCEF5D848 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7650507B22473E04F0E7E9949D7EC82F /* Foundation.framework in Frameworks */,
+				18EF97EDB794F63C2493B3A20A0E6275 /* Gloss.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		23B59A0A1520A5FD24F90F242E31A339 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				9FF4F96AA3114F9F2F30C3D7D3165550 /* Gloss.framework */,
+				68401EE14FF698196D13C76FB2623E3A /* iOS */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		468567DCAD1BD97A0FF5311745F47EB0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3326C6542656DE8DB0A15EF3A99046A2 /* Pods_QPXExpressWrapper_Example.framework */,
-				7FB4135269DC99FDEB224C843CE7DF55 /* Pods_QPXExpressWrapper_Tests.framework */,
-				4312F4CEA2B6C56B8E0AB959F5B8D5AB /* QPXExpressWrapper.framework */,
-			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		48331F0814E649D41F0433AB4870A365 /* Development Pods */ = {
@@ -154,6 +194,14 @@
 				DF384E967B549738195FCB369702F3A3 /* QPXExpressWrapper */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		68401EE14FF698196D13C76FB2623E3A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				156AEF095183636DA9FC902307257DBB /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		71ADECD98A57265B31835E7A31E66A7F /* Targets Support Files */ = {
@@ -170,8 +218,9 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				48331F0814E649D41F0433AB4870A365 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				468567DCAD1BD97A0FF5311745F47EB0 /* Products */,
+				23B59A0A1520A5FD24F90F242E31A339 /* Frameworks */,
+				D02F45D563905A95EA4E3CD6AF0F6C9D /* Pods */,
+				F1DC28B498B4FAD3E2D1A31FEAFDD24C /* Products */,
 				71ADECD98A57265B31835E7A31E66A7F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -199,7 +248,22 @@
 			children = (
 				DC2F58EFE0A341A947C638E4D45A2F48 /* Classes */,
 			);
+			name = QPXExpressWrapper;
 			path = QPXExpressWrapper;
+			sourceTree = "<group>";
+		};
+		AFF452D8BCF6A3070837C1D255E4ECAC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B0B8A6DF72DB2E28D44B711CE46FDD0 /* Gloss.modulemap */,
+				5863F3035FF00FC7163BA77F3CB20721 /* Gloss.xcconfig */,
+				88157DEC78A26DBF9861C98519004CE5 /* Gloss-dummy.m */,
+				76F2EB5D948B69E782128F7F8CD0A0CE /* Gloss-prefix.pch */,
+				2A924D9619D7AF04E365BE3D2E22F415 /* Gloss-umbrella.h */,
+				DC74EBAF3471B6DD6B1BE4A8C7EBDF7B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Gloss";
 			sourceTree = "<group>";
 		};
 		BA4FCA72889EC1104B416135FF47C448 /* Support Files */ = {
@@ -216,12 +280,12 @@
 			path = "Example/Pods/Target Support Files/QPXExpressWrapper";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		D02F45D563905A95EA4E3CD6AF0F6C9D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				F7C4CE09ACE145BE2ACF30E3431E25F9 /* Gloss */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		DC2F58EFE0A341A947C638E4D45A2F48 /* Classes */ = {
@@ -248,6 +312,7 @@
 				053F05162CAE1EA57497F6DCD26102F4 /* TripsDataCity.swift */,
 				11727C3BFBDD0F4E11B2162F47D98435 /* TripsDataTax.swift */,
 			);
+			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -259,6 +324,17 @@
 			);
 			name = QPXExpressWrapper;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		F1DC28B498B4FAD3E2D1A31FEAFDD24C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1358661C585EF9C2CED2D3C0E0A8CCB /* Gloss.framework */,
+				B84FF17F316BA04F42811AFCCE78489D /* Pods_QPXExpressWrapper_Example.framework */,
+				B3ABBF051270844EA2E3A1EFBDB2B6CC /* Pods_QPXExpressWrapper_Tests.framework */,
+				0229F61D1BB1622D0A256F1BA1BFE0AA /* QPXExpressWrapper.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F71B99730D0D940E8556367DF5D0024E /* Pods-QPXExpressWrapper_Example */ = {
@@ -279,78 +355,121 @@
 			path = "Target Support Files/Pods-QPXExpressWrapper_Example";
 			sourceTree = "<group>";
 		};
+		F7C4CE09ACE145BE2ACF30E3431E25F9 /* Gloss */ = {
+			isa = PBXGroup;
+			children = (
+				B2D662DAB98659018824DD70A1216105 /* Decoder.swift */,
+				A10DE9CC482224224CF94FE4FB4624B9 /* Encoder.swift */,
+				B2591A067136371451F2FDE8D8F9B6DE /* ExtensionArray.swift */,
+				852C0024C6E82FC24CDCBACB35A8EF75 /* ExtensionDecodable.swift */,
+				D6868C4B106F0FEEFB5D2965D580614D /* ExtensionDictionary.swift */,
+				FFEBE88DA47DB8CF7D74A3C46F5F9861 /* Gloss.swift */,
+				4D35554B04485072F244CE2FF0345D4B /* Operators.swift */,
+				AFF452D8BCF6A3070837C1D255E4ECAC /* Support Files */,
+			);
+			name = Gloss;
+			path = Gloss;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		39BEE9F6C099035910C4D9CF62A8FAA6 /* Headers */ = {
+		5C7B2932B25931A39CD3C1657CDD424F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C84AFE979BB8514A51A7F985B8DFBFAE /* QPXExpressWrapper-umbrella.h in Headers */,
+				6AA5B075BE42501A70BB653EB0DF74F2 /* Pods-QPXExpressWrapper_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4FE02D178B6AEFCE73AB7930669F6FCA /* Headers */ = {
+		6E6B1CDDF266967580C48D69B8EFE3CB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F817656D55AFDCC44D8D601C30165EBE /* Pods-QPXExpressWrapper_Example-umbrella.h in Headers */,
+				69E94F05CB65FD3FF69D61C5BC05BCA1 /* QPXExpressWrapper-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C718FC05252C0B7ECB0FE857BAC96079 /* Headers */ = {
+		AE3FE55C3B7866722DADD1D8B37272E5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8B1E85635C87CC5C96D785DC7348ED0 /* Pods-QPXExpressWrapper_Tests-umbrella.h in Headers */,
+				CDBD3770E5C2C44CC9A8BBD65F66688F /* Pods-QPXExpressWrapper_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB2440737CBE9D11928871D3FBA93CBC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7BA99394ED391BC9CC0208DD1E94921 /* Gloss-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		437A9EEC384EDCE6D39FA70A8F546805 /* QPXExpressWrapper */ = {
+		1B76BF9762F66F231E2CBDAAFAE23401 /* Pods-QPXExpressWrapper_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F805068D6A0533957392F77A997FB1D0 /* Build configuration list for PBXNativeTarget "QPXExpressWrapper" */;
+			buildConfigurationList = 0745926A0729D258E9A01DC231D56B51 /* Build configuration list for PBXNativeTarget "Pods-QPXExpressWrapper_Example" */;
 			buildPhases = (
-				89C67D1BBE7DDFAF693FBD3B879D0E0B /* Sources */,
-				CF8797D84B71107194818782B51A47EF /* Frameworks */,
-				39BEE9F6C099035910C4D9CF62A8FAA6 /* Headers */,
+				4524C9CF69E3623E7182687DB4E46EF0 /* Sources */,
+				0A0C57D85F4ABF8837FEEB5D043FFC02 /* Frameworks */,
+				5C7B2932B25931A39CD3C1657CDD424F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = QPXExpressWrapper;
-			productName = QPXExpressWrapper;
-			productReference = 4312F4CEA2B6C56B8E0AB959F5B8D5AB /* QPXExpressWrapper.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		774AD5B3B346E562355F94686039C835 /* Pods-QPXExpressWrapper_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 86D7409630A39666B2C9BDAD785AAEF4 /* Build configuration list for PBXNativeTarget "Pods-QPXExpressWrapper_Example" */;
-			buildPhases = (
-				326956D3711C09F9E0B080D7C7FC9451 /* Sources */,
-				B8DDF64419AD9AB12C3B77F9319524BF /* Frameworks */,
-				4FE02D178B6AEFCE73AB7930669F6FCA /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3E318695618441A255E3EFE699E60C26 /* PBXTargetDependency */,
+				DD7FFE02DA5B8B20696EB9E4ABCDB9B2 /* PBXTargetDependency */,
+				73C8ED89EF598E2A517CD1FBC31817F5 /* PBXTargetDependency */,
 			);
 			name = "Pods-QPXExpressWrapper_Example";
 			productName = "Pods-QPXExpressWrapper_Example";
-			productReference = 3326C6542656DE8DB0A15EF3A99046A2 /* Pods_QPXExpressWrapper_Example.framework */;
+			productReference = B84FF17F316BA04F42811AFCCE78489D /* Pods_QPXExpressWrapper_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BFA60C155D7FBA460454D1C05F7F25B3 /* Pods-QPXExpressWrapper_Tests */ = {
+		40E7477AD67135868F5FB08136602674 /* Gloss */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2148B5F2116541F91016194F56342C93 /* Build configuration list for PBXNativeTarget "Pods-QPXExpressWrapper_Tests" */;
+			buildConfigurationList = 22BF164D0ED6F128E787E36D290A314A /* Build configuration list for PBXNativeTarget "Gloss" */;
 			buildPhases = (
-				51CB853C2CBABFA4722E62203BFC1B04 /* Sources */,
-				44C1A6BEAC55952AF38EA642201E4FFF /* Frameworks */,
-				C718FC05252C0B7ECB0FE857BAC96079 /* Headers */,
+				D1078190021CE4E03F9858C308367E08 /* Sources */,
+				32232D93637C5674D0BA5402EBBC3AE8 /* Frameworks */,
+				CB2440737CBE9D11928871D3FBA93CBC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gloss;
+			productName = Gloss;
+			productReference = C1358661C585EF9C2CED2D3C0E0A8CCB /* Gloss.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		502E2353D4D1F2FF7F6B179477D3C2D9 /* QPXExpressWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21A770686E9F333814B17708F2753B8B /* Build configuration list for PBXNativeTarget "QPXExpressWrapper" */;
+			buildPhases = (
+				959C2096036C5E3CB4DF06437D4ADDA4 /* Sources */,
+				6924E72DF59FC729E86B73ABCEF5D848 /* Frameworks */,
+				6E6B1CDDF266967580C48D69B8EFE3CB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F1DBCF5E20FE30458876945A71F7C6E /* PBXTargetDependency */,
+			);
+			name = QPXExpressWrapper;
+			productName = QPXExpressWrapper;
+			productReference = 0229F61D1BB1622D0A256F1BA1BFE0AA /* QPXExpressWrapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B94AE6210E9B47ED05F7CB22C7DF263 /* Pods-QPXExpressWrapper_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 507905D915BD3829230B777A0DAB128F /* Build configuration list for PBXNativeTarget "Pods-QPXExpressWrapper_Tests" */;
+			buildPhases = (
+				1F603D45CC394CA05769DEFBD59D1723 /* Sources */,
+				5C0A84C291F44273F9D5A1ECB39B73B0 /* Frameworks */,
+				AE3FE55C3B7866722DADD1D8B37272E5 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -358,7 +477,7 @@
 			);
 			name = "Pods-QPXExpressWrapper_Tests";
 			productName = "Pods-QPXExpressWrapper_Tests";
-			productReference = 7FB4135269DC99FDEB224C843CE7DF55 /* Pods_QPXExpressWrapper_Tests.framework */;
+			productReference = B3ABBF051270844EA2E3A1EFBDB2B6CC /* Pods_QPXExpressWrapper_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -378,75 +497,167 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 468567DCAD1BD97A0FF5311745F47EB0 /* Products */;
+			productRefGroup = F1DC28B498B4FAD3E2D1A31FEAFDD24C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				774AD5B3B346E562355F94686039C835 /* Pods-QPXExpressWrapper_Example */,
-				BFA60C155D7FBA460454D1C05F7F25B3 /* Pods-QPXExpressWrapper_Tests */,
-				437A9EEC384EDCE6D39FA70A8F546805 /* QPXExpressWrapper */,
+				40E7477AD67135868F5FB08136602674 /* Gloss */,
+				1B76BF9762F66F231E2CBDAAFAE23401 /* Pods-QPXExpressWrapper_Example */,
+				9B94AE6210E9B47ED05F7CB22C7DF263 /* Pods-QPXExpressWrapper_Tests */,
+				502E2353D4D1F2FF7F6B179477D3C2D9 /* QPXExpressWrapper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		326956D3711C09F9E0B080D7C7FC9451 /* Sources */ = {
+		1F603D45CC394CA05769DEFBD59D1723 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3F81C9E2E416D5285E2EEB9F1B2B43A /* Pods-QPXExpressWrapper_Example-dummy.m in Sources */,
+				B3142FEE8E452C147C2457B4B6E5BE87 /* Pods-QPXExpressWrapper_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51CB853C2CBABFA4722E62203BFC1B04 /* Sources */ = {
+		4524C9CF69E3623E7182687DB4E46EF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82F86FB2115673E1A44C341FF8F666C5 /* Pods-QPXExpressWrapper_Tests-dummy.m in Sources */,
+				8EA6F1B707F71BFE783EEC9147B70C84 /* Pods-QPXExpressWrapper_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89C67D1BBE7DDFAF693FBD3B879D0E0B /* Sources */ = {
+		959C2096036C5E3CB4DF06437D4ADDA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0B883FD7170914F1969BDA7438531C4 /* QPXExpressWrapper-dummy.m in Sources */,
-				11707596C1EB08A3327F733722D5C1CD /* SearchResults.swift in Sources */,
-				51F8741ECDD2E9EF7671A4B9C4707CBF /* TripOption.swift in Sources */,
-				79A42018B17B3500C33BA39422C9326A /* TripOptionPricing.swift in Sources */,
-				C08566A208216EE184FD208F1DAFB7D7 /* TripOptionPricingFare.swift in Sources */,
-				E69F173717E243D9009609A8CCA335E1 /* TripOptionPricingSegment.swift in Sources */,
-				C75ADCDC2A7FDF638B46A22BD2AAC163 /* TripOptionPricingTax.swift in Sources */,
-				66B0BC99547816E3A3604BB9C718904D /* TripOptionSlice.swift in Sources */,
-				0A9B1A9A50FE7F0741239CDCC0FE1198 /* TripOptionSliceSegment.swift in Sources */,
-				9F4A099D1B60649DC4E0123848C8CEEC /* TripOptionSliceSegmentFlight.swift in Sources */,
-				7DD579DCD30FE8E422BEA735C7FFFF05 /* TripOptionSliceSegmentLeg.swift in Sources */,
-				90CAB3B15285D03EDE5619016C6DAED4 /* TripRequest.swift in Sources */,
-				0E874B3BDDE90157F9D237445BE395A6 /* TripRequestPassengers.swift in Sources */,
-				517C833FCFC49340476377788A6231E9 /* TripRequestSlice.swift in Sources */,
-				B28ADE4A6C2CEA568038DB7C9AA99672 /* Trips.swift in Sources */,
-				63181D85C7721FBCCC2BC69995C4D170 /* TripsData.swift in Sources */,
-				A0635E358766BE088B3BA242745D8E08 /* TripsDataAircraft.swift in Sources */,
-				F4835104740817980332B0643408D481 /* TripsDataAirport.swift in Sources */,
-				487CF3FE6E9D4CB436E00E081E00F991 /* TripsDataCarrier.swift in Sources */,
-				B5ECACE64A94D9FCC82EFB6D818B8599 /* TripsDataCity.swift in Sources */,
-				106359B7140E68CD96CD1FB4E3E9CD53 /* TripsDataTax.swift in Sources */,
+				C46D59AB69CD21909313C80F8D7B8364 /* QPXExpressWrapper-dummy.m in Sources */,
+				04F327A8CD10917CA00AFE573073955E /* SearchResults.swift in Sources */,
+				F80406EE93B3CE23B4CF98944E934733 /* TripOption.swift in Sources */,
+				6282B5C2F801362D0A31C5F0B9E3D9DD /* TripOptionPricing.swift in Sources */,
+				1B82F27AD316E53587BA41AEF4BC89A6 /* TripOptionPricingFare.swift in Sources */,
+				B45B6C52FC0A78BF2A3BC13B3F859621 /* TripOptionPricingSegment.swift in Sources */,
+				92B9E625D4AF623494BA780EFD471EA8 /* TripOptionPricingTax.swift in Sources */,
+				A2C63A249974FBEA24DF5425542629D5 /* TripOptionSlice.swift in Sources */,
+				D28BA02F32D1302B107CC408FA8BB049 /* TripOptionSliceSegment.swift in Sources */,
+				11373F4E4D3BAD381172D4F4D8554DAD /* TripOptionSliceSegmentFlight.swift in Sources */,
+				B65254CFFCCBD0E7B8108C1EE4039DDB /* TripOptionSliceSegmentLeg.swift in Sources */,
+				895EAFE858CBEE2AA669120FEB985370 /* TripRequest.swift in Sources */,
+				89007A2B2ECE9120FFEEA9DEDADA2081 /* TripRequestPassengers.swift in Sources */,
+				3DFB2594AB07D30B88798FE9BA0D7273 /* TripRequestSlice.swift in Sources */,
+				9D148F801A5DA5B3C5C89D2300B72CEA /* Trips.swift in Sources */,
+				C6D26105FF92C2491FCC2144BA340A19 /* TripsData.swift in Sources */,
+				BBD659939C386600388DFBFABAE7F8CD /* TripsDataAircraft.swift in Sources */,
+				52097A4ED01B629509F35B46A659EC0A /* TripsDataAirport.swift in Sources */,
+				ED12D398062DEA84AEEBD008387AA814 /* TripsDataCarrier.swift in Sources */,
+				E8158058535EF4CEFBB2D1219B6B7AA5 /* TripsDataCity.swift in Sources */,
+				7018260473A9CC281797DFFB30BE6EE3 /* TripsDataTax.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1078190021CE4E03F9858C308367E08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D81F377A1DF244782222DCB241CAEB /* Decoder.swift in Sources */,
+				D3B1766D93EFC0E7736AE2CFD49D24C4 /* Encoder.swift in Sources */,
+				FAEFA9371AA5A7F4C499C5519E279C27 /* ExtensionArray.swift in Sources */,
+				F7DD87D17D2BEFF0D9C2348D543D49F5 /* ExtensionDecodable.swift in Sources */,
+				EE33386073ACE146615C9C291C584D73 /* ExtensionDictionary.swift in Sources */,
+				CA3DD0BBA10012C102290B35C704D3CB /* Gloss-dummy.m in Sources */,
+				60EF2B4A841620E7F6E237712878CAE1 /* Gloss.swift in Sources */,
+				FBA873D017F99AC56947CCEF31641139 /* Operators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3E318695618441A255E3EFE699E60C26 /* PBXTargetDependency */ = {
+		0F1DBCF5E20FE30458876945A71F7C6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gloss;
+			target = 40E7477AD67135868F5FB08136602674 /* Gloss */;
+			targetProxy = 3260A61CC2C4676E2479171BC5BCE5E4 /* PBXContainerItemProxy */;
+		};
+		73C8ED89EF598E2A517CD1FBC31817F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = QPXExpressWrapper;
-			target = 437A9EEC384EDCE6D39FA70A8F546805 /* QPXExpressWrapper */;
-			targetProxy = E277E42BC233D62AF97B7D4B6FE456FA /* PBXContainerItemProxy */;
+			target = 502E2353D4D1F2FF7F6B179477D3C2D9 /* QPXExpressWrapper */;
+			targetProxy = 542AE6522524B7D731DE769FEDC2BEAE /* PBXContainerItemProxy */;
+		};
+		DD7FFE02DA5B8B20696EB9E4ABCDB9B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Gloss;
+			target = 40E7477AD67135868F5FB08136602674 /* Gloss */;
+			targetProxy = 66F764EBF808D2BED98A12249DDCB8E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+		40D0E26574A81A64ACDBEAD74B80BD7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5863F3035FF00FC7163BA77F3CB20721 /* Gloss.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Gloss;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		475CA3F68E164C41CF490377E47F13D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6C7AD8E96E51CB1BC664CE3E3B57F8F /* QPXExpressWrapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/QPXExpressWrapper/QPXExpressWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/QPXExpressWrapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/QPXExpressWrapper/QPXExpressWrapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = QPXExpressWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -464,6 +675,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -483,16 +695,19 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		2F7A67E82EDBB07C2F209959C74444DF /* Debug */ = {
+		6735E61B745CBAC441136FF50E6B3BDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 94F42DD843F1499F593CB37A64BCBBAC /* Pods-QPXExpressWrapper_Example.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -522,106 +737,13 @@
 			};
 			name = Debug;
 		};
-		487184A59EBCA01502EFDA05C18EA4C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C4B893E0B612E6B3103464E368E848CE /* Pods-QPXExpressWrapper_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-QPXExpressWrapper_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QPXExpressWrapper_Example/Pods-QPXExpressWrapper_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_QPXExpressWrapper_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		650C2F42C5F2758B43848F7132B73253 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6C7AD8E96E51CB1BC664CE3E3B57F8F /* QPXExpressWrapper.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/QPXExpressWrapper/QPXExpressWrapper-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/QPXExpressWrapper/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/QPXExpressWrapper/QPXExpressWrapper.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = QPXExpressWrapper;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		82B139FC4814C12615B9E63D7F477D6A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19DFA9018A699E04ABD944CAFF207914 /* Pods-QPXExpressWrapper_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-QPXExpressWrapper_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-QPXExpressWrapper_Tests/Pods-QPXExpressWrapper_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_QPXExpressWrapper_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		97E2560E88D2DC898B851903083B36F4 /* Debug */ = {
+		69CD4DC81DD213DF2F479AA3D654FD4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8244AD3DC959C12E2CCF94457FB4F52C /* Pods-QPXExpressWrapper_Tests.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -650,11 +772,13 @@
 			};
 			name = Debug;
 		};
-		9C4778B23C35CB5F92C86BA6C2CEA0D2 /* Debug */ = {
+		989CA8B01E9E4D0E3C33C36FBD0F9B78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B6C7AD8E96E51CB1BC664CE3E3B57F8F /* QPXExpressWrapper.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
@@ -674,13 +798,82 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+		A007FEB8764E1381A43E9D9C16448711 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5863F3035FF00FC7163BA77F3CB20721 /* Gloss.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Gloss/Gloss-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Gloss/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Gloss/Gloss.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Gloss;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B096EED4F7EF036D3C123099AE91FCD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B893E0B612E6B3103464E368E848CE /* Pods-QPXExpressWrapper_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QPXExpressWrapper_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QPXExpressWrapper_Example/Pods-QPXExpressWrapper_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QPXExpressWrapper_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -698,6 +891,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -712,20 +906,74 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
+		E4991074C3AAFE5409B05318EC2B69CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19DFA9018A699E04ABD944CAFF207914 /* Pods-QPXExpressWrapper_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QPXExpressWrapper_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QPXExpressWrapper_Tests/Pods-QPXExpressWrapper_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QPXExpressWrapper_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2148B5F2116541F91016194F56342C93 /* Build configuration list for PBXNativeTarget "Pods-QPXExpressWrapper_Tests" */ = {
+		0745926A0729D258E9A01DC231D56B51 /* Build configuration list for PBXNativeTarget "Pods-QPXExpressWrapper_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97E2560E88D2DC898B851903083B36F4 /* Debug */,
-				82B139FC4814C12615B9E63D7F477D6A /* Release */,
+				6735E61B745CBAC441136FF50E6B3BDC /* Debug */,
+				B096EED4F7EF036D3C123099AE91FCD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21A770686E9F333814B17708F2753B8B /* Build configuration list for PBXNativeTarget "QPXExpressWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989CA8B01E9E4D0E3C33C36FBD0F9B78 /* Debug */,
+				475CA3F68E164C41CF490377E47F13D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22BF164D0ED6F128E787E36D290A314A /* Build configuration list for PBXNativeTarget "Gloss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A007FEB8764E1381A43E9D9C16448711 /* Debug */,
+				40D0E26574A81A64ACDBEAD74B80BD7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -733,26 +981,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				034014829C1E4434983CF3A690C12017 /* Debug */,
-				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86D7409630A39666B2C9BDAD785AAEF4 /* Build configuration list for PBXNativeTarget "Pods-QPXExpressWrapper_Example" */ = {
+		507905D915BD3829230B777A0DAB128F /* Build configuration list for PBXNativeTarget "Pods-QPXExpressWrapper_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F7A67E82EDBB07C2F209959C74444DF /* Debug */,
-				487184A59EBCA01502EFDA05C18EA4C4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F805068D6A0533957392F77A997FB1D0 /* Build configuration list for PBXNativeTarget "QPXExpressWrapper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9C4778B23C35CB5F92C86BA6C2CEA0D2 /* Debug */,
-				650C2F42C5F2758B43848F7132B73253 /* Release */,
+				69CD4DC81DD213DF2F479AA3D654FD4B /* Debug */,
+				E4991074C3AAFE5409B05318EC2B69CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

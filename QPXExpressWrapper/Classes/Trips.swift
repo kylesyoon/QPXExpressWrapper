@@ -7,54 +7,31 @@
 //
 
 import Foundation
+import Gloss
 
-public struct Trips {
+public struct Trips: Decodable {
     
     public let kind: String
-    public let requestID: String
-    public let data: TripsData
-    public let tripOptions: [TripOption]
+    public let requestID: String?
+    public let data: TripsData?
+    public let tripOptions: [TripOption]?
     
-    init(kind: String,
-         requestID: String,
-         data: TripsData,
-         tripOptions: [TripOption]) {
-        self.kind = kind
-        self.requestID = requestID
-        self.data = data
-        self.tripOptions = tripOptions
-    }
-    
-    static func decode(jsonDict: [String: AnyObject]) -> Trips? {
-        if let kind = jsonDict["kind"] as? String,
-            requestID = jsonDict["requestId"] as? String,
-            data = jsonDict["data"] as? [String: AnyObject],
-            tripOptions = jsonDict ["tripOption"] as? [[String: AnyObject]] {
-            var decodedTripOptions = [TripOption]()
-            for option in tripOptions {
-                if let decodedOption = TripOption.decode(option) {
-                    decodedTripOptions.append(decodedOption)
-                }
-            }
-            
-            if let data = TripsData.decode(data) {
-                return Trips(kind: kind,
-                             requestID: requestID,
-                             data: data,
-                             tripOptions: decodedTripOptions)
-            }
+    public init?(json: JSON) {
+        guard let kind: String = "kind" <~~ json else {
+            return nil
         }
         
-        return nil
+        self.kind = kind
+        self.requestID = "requestId" <~~ json
+        self.data = "data" <~~ json
+        if let tripOptionJSON = json["tripOption"] as? [JSON],
+            let tripOptions = [TripOption].from(jsonArray: tripOptionJSON) {
+            self.tripOptions = tripOptions
+        }
+        else {
+            self.tripOptions = nil
+        }
+        
     }
-    
-}
 
-extension Trips: Equatable {}
-
-public func ==(lhs: Trips, rhs: Trips) -> Bool {
-    return lhs.kind == rhs.kind &&
-        lhs.requestID == rhs.requestID &&
-        lhs.data == rhs.data &&
-        lhs.tripOptions == rhs.tripOptions
 }
