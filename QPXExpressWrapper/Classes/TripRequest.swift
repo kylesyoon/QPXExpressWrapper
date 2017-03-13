@@ -47,17 +47,19 @@ public struct TripRequest: Decodable, Encodable {
     }
     
     public func toJSON() -> JSON? {
-        guard let sliceJSON = self.slice.toJSONArray() else {
-            return nil
+        guard
+            let sliceJSON = self.slice.toJSONArray(),
+            let json = jsonify([
+                "passengers" ~~> self.passengers,
+                "slice" ~~> sliceJSON,
+                "maxPrice" ~~> self.maxPrice,
+                "saleCountry" ~~> self.saleCountry,
+                "refundable" ~~> self.refundable,
+                "solutions" ~~> self.solutions
+                ]) else {
+                    return nil
         }
-        return JSON(dictionaryLiteral: ("request", jsonify([
-            "passengers" ~~> self.passengers,
-            "slice" ~~> sliceJSON,
-            "maxPrice" ~~> self.maxPrice,
-            "saleCountry" ~~> self.saleCountry,
-            "refundable" ~~> self.refundable,
-            "solutions" ~~> self.solutions
-            ])))
+        return ["request": json]
     }
 
 }
