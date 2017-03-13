@@ -50,14 +50,14 @@ public struct TripRequest: Decodable, Encodable {
         guard let sliceJSON = self.slice.toJSONArray() else {
             return nil
         }
-        return ["request" : jsonify([
+        return JSON(dictionaryLiteral: ("request", jsonify([
             "passengers" ~~> self.passengers,
             "slice" ~~> sliceJSON,
             "maxPrice" ~~> self.maxPrice,
             "saleCountry" ~~> self.saleCountry,
             "refundable" ~~> self.refundable,
             "solutions" ~~> self.solutions
-            ])]
+            ])))
     }
 
 }
